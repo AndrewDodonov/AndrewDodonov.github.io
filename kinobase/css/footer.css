@@ -1,0 +1,91 @@
+footer {
+    width: 1920px;
+    background: url("../img/background_texture_right.png");
+    position: relative;
+    border-top: 7px solid #c7c7c7;
+    padding-bottom: 10px;
+}
+
+.columns {
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    margin-right: 34px;
+
+
+}
+
+.column span {
+    color: #6e6a6a;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.column a {
+    color: white;
+    font-size: 14px;
+}
+
+.column a:hover {
+    text-decoration: none;
+}
+
+.logo_studio {
+    position: absolute;
+    top: 150px;
+    right: 450px;
+}
+
+.corners_picture {
+    position: absolute;
+    top: -65px;
+    right: 440px;
+}
+
+.name_time_1, .name_time_2 {
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.name_time_1 {
+    border-bottom: solid black 1px;
+    box-shadow: 0 1px #343333;
+}
+
+.first_comment .first_name::before {
+    content: url("../img/ico.png");
+}
+
+.first_name {
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.name_time_2 {
+    color: #6d6c6c;
+    font-size: 12px;
+    margin-right: 5px;
+    border-bottom: solid #c7c7c7 1px;
+    box-shadow: 0 1px white;
+}
+
+.second_comment .second_name::before {
+    content: url("../img/ico.png");
+}
+
+.second_name {
+    color: #bf265f;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.second_comment {
+    color: #6d6c6c;
+    font-size: 14px;
+    padding-left: 4px;
+}

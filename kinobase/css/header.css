@@ -1,0 +1,352 @@
+body {
+    font-family: Tahoma;
+    padding: 0;
+    margin: 0;
+    background: url("../img/background.jpg");
+
+}
+
+.top {
+    height: 36px;
+    width: 1920px;
+    background: url("../img/background_texture.png");
+    position: relative;
+}
+
+.logo, .logo_footer {
+    color: #6d6c6c;
+    font-size: 20px;
+    font-weight: bold;
+
+    padding: 4px;
+}
+
+.logo {
+    margin-left: 10%;
+}
+
+.logo_footer {
+    margin-left: 21%;
+}
+
+.logo sup, .logo_footer sup {
+    font-size: 12px;
+}
+
+.logo span {
+    font-size: 10px;
+    padding: 5px ;
+}
+.main_menu {
+    display: flex;
+
+}
+
+.main_menu li {
+    list-style-type: none;
+}
+
+nav  {
+
+    position: absolute;
+    right: 15%;
+    top: -10px;
+}
+
+.menu {
+    color: #6d6c6c;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+    margin-right: 12pt;
+    font: 12pt bold;
+    border-left: ridge black 1px;;
+    padding: 10px;
+    height: 100%;
+
+    transition: .5s ease;
+
+
+
+}
+
+.menu:hover {
+    color: dodgerblue;
+}
+
+.content {
+
+    background-color: #154ca5;
+    width: 1914px;
+    height: 47px;
+    border: solid transparent;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+}
+
+
+.left {
+    position: absolute;
+    bottom: -12px;
+    left: 10%;
+
+}
+.login {
+
+    margin-left: 12%;
+
+}
+
+.login p {
+
+    color: white;
+    font-size: 15px;
+    letter-spacing: 7px;
+}
+
+.account, .log {
+
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: .3s ease;
+
+}
+
+.account:hover, .log:hover {
+    color: #6d6c6c;
+}
+
+.find {
+    display: flex;
+    justify-items: center;
+}
+
+.input__find {
+    width: 365px;
+    height: 30px;
+    padding-left: 15px;
+    margin-top: 2px;
+
+    border-radius: 5px;
+}
+
+.find__out {
+
+
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: .3s ease;
+    margin-top: 17px;
+    margin-right: 20px;
+
+}
+
+.find__out:hover {
+    color: #6d6c6c;
+}
+
+
+
+.find__main {
+    margin-right: 20vw;
+    position: relative;
+
+}
+
+/* .img_find {
+
+    position: absolute;
+    top: -13px;
+    left: -50px;
+
+} */
+
+.img_find_1 {
+
+    position: absolute;
+    top: 4px;
+    left: -50px;
+
+}
+
+.img_find_2 {
+
+    position: absolute;
+    top: -13px;
+    left: 330px;
+
+}
+
+
+
+.width__find {
+    position: absolute;
+    top: 37px;
+    left: 230px;
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    transition: .3s ease;
+
+
+
+}
+
+.rating {
+
+
+
+    width: 1920px;
+    height: 30px;
+    background: url("../img/background.jpg");
+    padding-left: -105px;
+    padding-top: 15px;
+    box-shadow: 1px 1px rgba(168,166,166,.9);
+
+
+}
+
+.rating a {
+    margin-left: 16%;
+    text-decoration: none;
+    color: grey;
+    font: 15pt bold;
+    font-family: Tahoma;
+
+    text-shadow: 1px 1px 2px white;
+    transition: .4s ease;
+
+}
+
+.rating a:hover {
+    color: #6d6c6c;
+}
+
+.slider {
+    background: url("../img/slayder.jpg") no-repeat;
+    background-size: 100%;
+    width: 1920px;
+    height: 416px;
+    position: relative;
+
+}
+
+.left__btn {
+    position: absolute;
+    top: 192px;
+    left: 288px;
+    cursor: pointer;
+
+}
+
+
+
+.right__btn {
+    position: absolute;
+    top: 192px;
+    right: 288px;
+    cursor: pointer;
+}
+
+.corner__bottom {
+
+    position: absolute;
+    bottom: -5px;
+    left: 350px;
+}
+
+.slider__btn {
+    position: absolute;
+    bottom: 39px;
+    right: 385px;
+    cursor: pointer;
+
+}
+
+.carpet {
+
+    width: 308px;
+    height: 270px;
+    background-color: #010307;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 96px;
+    right: 385px;
+}
+
+
+.madagaskar {
+    color: white;
+    font-size: 20px;
+    font-family: Tahoma;
+    font-weight: 300;
+    margin-left: 10px;
+    margin-top: 15px;
+    line-height: 8px;
+    font-stretch: expanded;
+
+}
+.madagaskar p {
+
+    font-size: 12px;
+}
+
+.madagaskar__date {
+
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.madagaskar__date span {
+    font-size: 15px;
+}
+
+.description {
+    margin-top: 30px;
+    font-size: 11px;
+    font-weight: 100;
+    line-height: 13px;
+}
+
+.corner__2 {
+    position: absolute;
+    bottom: 180px;
+    right: 662px;
+    z-index: 1;
+}
+
+.corner__1 {
+
+    position: absolute;
+    bottom: 342px;
+    right: 410px;
+    z-index: 1;
+}
+
+.slogan {
+
+    font-family: Arial;
+    margin-left: 450px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 25px;
+    width: 1000px;
+
+
+}
+
+.slogan span {
+    font-size: 20px;
+    font-weight: 700;
+}
