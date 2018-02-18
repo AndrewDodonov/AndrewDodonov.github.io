@@ -1,0 +1,201 @@
+body {
+
+    background-color: #f5df1d;
+}
+
+.font {
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    transition: color .5s ease;
+}
+
+.font:hover {
+    color: aqua;
+}
+
+.logo, .menu {
+    margin-top: 20px;
+}
+
+.icons__item {
+    list-style-type: none;
+}
+
+.icons__item a {
+    font-size: 47px;
+    color: black;
+    margin-right: 30px;
+    transition: .5s ease;
+}
+
+.icons__item a:hover {
+    color: aqua;
+}
+
+.offer {
+
+    width: 550px;
+}
+
+.offer__title, .offer__intro {
+    font-family: 'Orbitron', sans-serif;;
+}
+
+.offer__intro {
+    font-size: 20px;
+}
+
+.offer__text {
+    font-size: 16px;
+    margin-top: 20px;
+
+}
+
+.img_inspiration {
+
+    margin-left: -80px;
+}
+
+.inspiration {
+    margin-top: 90px;
+    margin-bottom: 150px;
+}
+
+.white {
+    padding-top: 20px;
+    background-color: white;
+    padding-bottom: 40px;
+}
+
+.gallery_name p {
+
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.some_top {
+    margin-top: 80px;
+}
+
+.feature__title, .feature__text {
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+.feature__title {
+    text-align: center;
+}
+
+.feature__text {
+    text-align: justify;
+}
+
+
+
+.photo {
+    display: block;
+
+    margin: 30px auto;
+}
+
+.btn {
+    display: block;
+
+    margin: 10px auto;
+}
+
+@media screen and (max-width: 990px) {
+
+    .img_inspiration {
+
+        display: block;
+
+        margin: 0 auto;
+    }
+
+}
+
+.contacts {
+    padding-top: 30px;
+}
+
+
+@media screen and (max-width: 500px){
+
+    .btn-group {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 500px){
+
+    .btn-group {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .offer {
+        width: auto;
+    }
+
+
+}
+
+.btn-group {
+    margin-top: 20px;
+}
+
+.btn-group button {
+  background-color: #f5df1d;
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+.faq {
+    padding-bottom: 40px;
+    padding-top: 40px;
+    background-color: white;
+}
+
+.faq img{
+    display: block;
+    margin: 50px auto;
+}
+
+
+.collapsed {
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+}
+
+footer {
+    background-color: black;
+    height: 140px;
+    color: #f5df1d;
+}
+
+footer img {
+    margin-top: 20px;
+}
+
+footer .col-lg-6 {
+    font-family: 'Orbitron', sans-serif;
+    margin-top: 20px;
+}
