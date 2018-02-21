@@ -1,0 +1,636 @@
+
+
+.header-container .video-container {
+
+    width: 100vw;
+}
+
+.wrapper {
+
+
+}
+body {
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #17c2a4;
+}
+
+.navigation {
+    width: 100vw;
+    opacity: .7;
+    background-color: white;
+
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+
+}
+
+.href {
+
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 40px;
+
+    color: #005288;
+
+}
+
+.href:hover {
+    color: #88000e;
+    font-weight: bold;
+}
+
+.space-x {
+
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+
+.space-x p {
+    font-family: 'Titillium Web', sans-serif;
+    color: #88000e;
+    font-size: 50px;
+
+}
+
+.order {
+
+    width: 200px;
+    height: 50px;
+    background-color: #005288;
+    position: absolute;
+
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    transition: .5s ease;
+
+}
+
+.order:hover {
+    opacity: .5;
+    background-color: #88000e;
+}
+
+
+
+.offer {
+
+    width: 100%;
+
+    background-color: #17c2a4;
+    padding-top: 80px;
+    padding-bottom: 40px;
+
+
+
+
+}
+
+
+
+h3 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    /*letter-spacing: 3px;
+    line-height: 5px; */
+
+}
+
+.offer h3 {
+    color:white;
+}
+
+.p-top {
+    text-align: center;
+
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.offer .p-top {
+    color: white;
+}
+
+.services {
+    display: flex;
+
+    flex-wrap: wrap;
+
+   justify-content: space-between;
+   margin: 120px 100px 50px 50px;
+
+}
+
+.service {
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+
+
+    margin-bottom: 40px;
+
+
+}
+
+@media screen and (min-width: 950px) {
+    .service {
+        width: 24%;
+    }
+
+    .trooper {
+        width: 20%;
+        padding-left: 30px;
+    }
+
+    .img-container {
+        display: none;
+    }
+
+
+    .order {
+
+        top: 400px;
+        left: 200px;
+    }
+
+    textarea{
+    width: 380px;}
+
+    .navigation {
+        height: 55px;
+    }
+
+    .footer ul {
+        margin-left: 20vw;
+    }
+
+    .table th {
+
+        font-size: 30px;
+        color: #e7f2f8;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .service {
+        width: 49%;
+    }
+
+    .trooper {
+        width: 40%;
+        padding-left: 10px;
+
+    }
+    .img-container {
+        display: none;
+    }
+
+    .header-container img {
+        width: 60vw;
+    }
+
+    .form img {
+        display: none;
+    }
+
+    .order {
+        top: 400px;
+        left: 200px;
+    }
+
+    textarea{
+        width: 380px;}
+
+    .navigation {height: 55px;}
+
+    .footer ul {
+        margin-left: 15vw;
+    }
+
+    .table th {
+
+        font-size: 30px;
+        color: #e7f2f8;
+    }
+}
+
+
+
+
+@media screen and (max-width: 620px) {
+
+    .video-container {
+        display: none;
+    }
+
+    .img-container {
+        display: block;
+    }
+
+    .href {
+
+        font-size: 15px;
+    }
+
+    .order {
+        top: 600px;
+        left: 100px;
+    }
+
+    textarea{
+        width: 380px;}
+    .navigation {
+        height: 55px;
+    }
+
+    .footer ul {
+        margin-left: 20vw;
+    }
+
+    .table th {
+
+        font-size: 30px;
+        color: #e7f2f8;
+    }
+
+    .img-container img {
+
+        height: 70%;
+        width: 40%;
+
+    }
+}
+
+
+
+@media screen and (max-width: 550px) {
+    .service {
+        width: 100%;
+    }
+
+    .trooper {
+        width: 100%;
+    }
+    .trooper img {
+        width: 70%;
+
+    }
+
+    .video-container {
+        display: none;
+    }
+
+    .img-container {
+        display: block;
+    }
+
+    .header-container img {
+        width: 60vw;
+    }
+
+    textarea {
+        width: 70vw;
+    }
+
+    .navigation {
+        height: 65px;
+    }
+    .order {
+        top: 600px;
+        left: 20vw;
+    }
+
+    .footer ul {
+        margin-left: 15vw;
+    }
+
+    .table th {
+
+        font-size: 20px;
+        color: #e7f2f8;
+    }
+
+
+}
+
+
+.img-container {
+    width: 100vw;
+    height: 700px;
+    z-index: -1;
+    background-color: #e7f2f8;
+}
+
+.img-container img {
+
+    margin-top: 65px;
+    margin-left: 40px;
+
+}
+
+.service h4 {
+    font-size: 25px;
+}
+
+
+.meeting {
+
+
+    padding-top: 80px;
+    background-color: #e7f2f8;
+    width: 100%;
+    /*height: 747px; */
+    padding-bottom: 80px;
+
+}
+
+.meeting h3 {
+    color: #3a425b;
+}
+
+.meeting .p-top {
+    color: #87919d;
+}
+
+.team {
+
+
+    /*display: flex;
+    flex-direction: row; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /*margin: 120px 100px 50px 50px; */
+
+    margin: 50px auto;
+
+}
+
+.trooper {
+   /* display: inline-block; */
+
+    color: #48525e;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+
+
+
+
+
+}
+
+.trooper span {
+    color: deepskyblue;
+}
+
+.trooper h4 {
+    font-weight: bold;
+    line-height: 1px;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+
+
+.facebook a {
+    display: block;
+    background: url("facebook-grey.png") no-repeat;
+    width: 40px;
+    height: 32px;
+    margin-right: 5px;
+
+}
+
+.facebook a:hover {
+    display: block;
+    background: url("facebook.png") no-repeat;
+    width: 40px;
+    height: 32px;
+    margin-right: 5px;
+}
+
+.twitter a {
+    display: block;
+    background: url("twitter-grey.png") no-repeat;
+    width: 40px;
+    height: 32px;
+    margin-right: 5px;
+}
+
+.twitter a:hover {
+    display: block;
+    background: url("twitter.png") no-repeat;
+    width: 40px;
+    height: 32px;
+    margin-right: 5px;
+}
+
+
+.in a {
+    display: block;
+    background: url("in-grey.png") no-repeat;
+    width: 40px;
+    height: 32px;
+    margin-right: 5px;
+}
+
+.in a:hover {
+    display: block;
+    background: url("in.png") no-repeat;
+    width: 40px;
+    height: 32px;
+    margin-right: 5px;
+}
+
+.mail a {
+    display: block;
+    background: url("mail-grey.png") no-repeat;
+    width: 40px;
+    height: 32px;
+    margin-right: 5px;
+}
+
+.mail a:hover {
+    display: block;
+    background: url("mail.png") no-repeat;
+    width: 40px;
+    height: 32px;
+    margin-right: 5px;
+}
+
+.price {
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.table {
+
+    line-height: 40px;
+    /*margin-left: 15vw;
+    margin-top: 50px; */
+    margin: 50px auto;
+
+}
+
+
+
+.price #price {
+    color: #e7f2f8;
+}
+
+
+input[type="submit"] {
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+input[type="text"] {
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+input[type="email"] {
+    color: white;
+    font-family: 'Titillium Web', sans-serif;}
+
+.input[placeholder*="E-mail"]{
+
+    color: #e7f2f8;
+}
+
+form {
+
+    line-height: 60px;
+    text-align: center;
+}
+
+.form {
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #344b8e;
+    color: #e7f2f8;
+    position: relative;
+}
+
+.falcon-heavy {
+    position: absolute;
+    left: 60px;
+    top: 30px;
+}
+
+textarea {
+
+
+    height: 100px;
+    background-color: #17c2a4;
+    border: solid #17c2a4 1px;
+}
+
+.input {
+    width: 170px;
+    height: 30px;
+    padding-left: 10px;
+    margin-right: 10px;
+    background-color: #17c2a4;
+    border: solid #17c2a4 3px;
+    border-radius: 2px;
+}
+
+input:focus {
+    background-color: #e7f2f8;
+}
+
+.date {
+    background-color: #17c2a4;
+}
+
+textarea:focus {
+
+    background-color: #e7f2f8;
+}
+
+.submit {
+
+    width: 100px;
+    height: 30px;
+    background-color: #17c2a4;
+    border: solid #17c2a4 3px;
+    border-radius: 3px;
+}
+
+.submit:hover {
+    font-weight: bold;
+}
+
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #005288;
+    border-top: solid transparent 1px;
+    padding-top: 48px ;
+    text-align: center;
+
+}
+
+.footer-li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+.footer-a a {
+    color:  white;
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.footer-a a:hover {
+    color: #30bae7;
+}
+
+
+
+.menu a:visited {
+
+    color: #88000e;
+}
+
+/*.footer a::before {
+
+    content: url("rocket-little.png");
+
+
+}
+
+.footer a:hover::before {
+    content: url("rocket-little-mirror.png");
+} */
