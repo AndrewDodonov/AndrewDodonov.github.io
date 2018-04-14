@@ -1,0 +1,155 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f2f2f2; }
+
+h1 {
+  color: #fefefe;
+  font-size: 36px;
+  margin-left: 50px; }
+
+h3 {
+  margin-left: 40px;
+  padding-top: 40px; }
+
+.under_title {
+  margin-left: 110px;
+  font-size: 15px;
+  color: #fefefe; }
+
+.right_under_title {
+  margin-left: 50px;
+  font-size: 15px;
+  color: #fefefe; }
+
+.fa-envira {
+  padding-right: 20px; }
+
+.fa-search {
+  color: grey; }
+
+.fa-search:hover {
+  color: white; }
+
+.logo {
+  width: auto;
+  background: #1a5f75;
+  color: #fefefe; }
+  .logo .site_logo {
+    position: absolute;
+    left: 200px;
+    top: 15px;
+    font-size: 18px;
+    text-transform: uppercase; }
+  .logo .input-group {
+    margin-top: 7px; }
+    .logo .input-group .fa-map-marker {
+      color: red; }
+    .logo .input-group .fa-map-marker:hover {
+      color: white; }
+  .logo .messages {
+    position: absolute;
+    top: 7px;
+    right: 20px;
+    color: #000;
+    font-size: 25px;
+    cursor: pointer;
+    letter-spacing: 10px; }
+
+.background__picture {
+  background: url(../img/slide3.jpg) no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: auto; }
+
+.gradient {
+  background: linear-gradient(to bottom, #dfdfdf, #3d3d3d);
+  width: 100%;
+  height: 100%;
+  opacity: .6; }
+
+.main {
+  margin-top: -220px;
+  padding-bottom: 200px;
+  box-sizing: border-box; }
+  .main__words {
+    background: #fff;
+    width: auto;
+    padding-bottom: 50px;
+    margin-top: 55px;
+    box-shadow: grey 0 0, 3px 3px 10px;
+    font-size: 15px; }
+    .main__words p {
+      width: 73%;
+      margin-left: 100px;
+      padding-top: 20px; }
+  .main__next__words {
+    padding-bottom: 50px;
+    width: auto;
+    background: #ffffff;
+    margin-top: 20px;
+    box-shadow: grey 0 0, 3px 3px 10px; }
+  .main__faq {
+    padding-top: 50px;
+    margin-left: 60px;
+    font-size: 20px;
+    font-weight: 700; }
+
+.fa-graduation-cap {
+  margin-right: 10px; }
+
+.banner {
+  background: #fff;
+  width: 245px;
+  height: 420px;
+  box-shadow: grey 0 0, 3px 3px 10px;
+  margin-top: 55px;
+  position: relative; }
+  .banner__map {
+    position: absolute;
+    left: 24px;
+    bottom: 10px;
+    color: #979797; }
+    .banner__map .fa-map-marker {
+      color: #979797 !important;
+      padding-right: 15px; }
+    .banner__map span {
+      margin-left: 30px; }
+  .banner__school {
+    position: absolute;
+    top: 202px;
+    left: 14px;
+    width: 210px; }
+  .banner__text {
+    font-size: 15px;
+    border-bottom: solid grey 1px;
+    padding-bottom: 25px; }
+  .banner__title {
+    font-weight: 700;
+    margin-left: 14px; }
+    .banner__title .fa-check-square {
+      padding-right: 15px; }
+    .banner__title span {
+      margin-left: 30px; }
+  .banner .fa {
+    color: #1a5f75;
+    font-size: 20px; }
+  .banner .fa-star-o {
+    position: absolute;
+    top: 14px;
+    right: 25px; }
+  .banner__photo {
+    position: absolute;
+    top: 52px;
+    left: 14px; }
+  .banner__logotype {
+    position: absolute;
+    width: 86px;
+    height: 86px;
+    box-shadow: grey 0 0, 3px 3px 10px;
+    left: 22px;
+    top: -15px;
+    border-radius: 6px;
+    background: #fff; }
+    .banner__logotype img {
+      display: block;
+      margin: 10px auto; }
