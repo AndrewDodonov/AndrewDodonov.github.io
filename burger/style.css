@@ -1,20 +1,20 @@
 .burger {
     position: relative;
-    top: 25px;
-    left: 25px;
-    width: 60px;
-    height: 60px;
+    top: calc(2*25px);
+    left: calc(2*25px);
+    width: calc(2*60px);
+    height: calc(2*60px);
     cursor: pointer;
 
 }
 
 .line_one {
-    top: 20px;
-    left: 10px;
+    top: calc(2*20px);
+    left: calc(2*10px);
     position: absolute;
     display: block;
-    height: 2px;
-    width: 30px;
+    height: calc(2*2px);
+    width: calc(2*30px);
     background: #000;
     transition: all 1s ease;
 
@@ -22,23 +22,23 @@
 }
 
 .line_two {
-    top: 30px;
-    left:10px;
+    top: calc(2*30px);
+    left: calc(2*10px);
     position: absolute;
     display: block;
-    height: 2px;
-    width: 30px;
+    height: calc(2*2px);
+    width: calc(2*30px);
     background: #000;
     transition: all 1s ease;
 }
 
 .line_three {
-    top: 40px;
-    left:10px;
+    top: calc(2*40px);
+    left: calc(2*10px);
     position: absolute;
     display: block;
-    height: 2px;
-    width: 30px;
+    height: calc(2*2px);
+    width: calc(2*30px);
     background: #000;
     transition: all 1s ease;
 
@@ -52,7 +52,7 @@
 
 .rotate_two {
     transform: rotate(-135deg);
-    top: 20px;
+    top: calc(2*20px);
 }
 
 .go_three {
