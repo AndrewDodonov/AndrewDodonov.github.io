@@ -1,0 +1,60 @@
+.burger {
+    position: relative;
+    top: 25px;
+    left: 25px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+
+}
+
+.line_one {
+    top: 20px;
+    left: 10px;
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 30px;
+    background: #000;
+    transition: all 1s ease;
+
+
+}
+
+.line_two {
+    top: 30px;
+    left:10px;
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 30px;
+    background: #000;
+    transition: all 1s ease;
+}
+
+.line_three {
+    top: 40px;
+    left:10px;
+    position: absolute;
+    display: block;
+    height: 2px;
+    width: 30px;
+    background: #000;
+    transition: all 1s ease;
+
+
+}
+
+.rotate_one {
+    transform: rotate(135deg);
+
+}
+
+.rotate_two {
+    transform: rotate(-135deg);
+    top: 20px;
+}
+
+.go_three {
+    width:0;
+}
