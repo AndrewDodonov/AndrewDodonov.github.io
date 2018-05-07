@@ -1,0 +1,211 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+nav {
+    padding-top: 10px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background: rgba(123,162,183, .7);
+    box-sizing: border-box;
+    z-index: 5;
+}
+
+h1 {
+    margin-top: 40px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
+}
+
+header {
+    background: #8a9eb9;
+    animation: background 6s infinite alternate;
+    box-shadow: 0 -100px 70px -120px teal inset,
+    0 -220px 70px -120px #8bc4d2 inset,
+    0 -280px 70px -120px #bcdb95 inset;
+
+    padding-bottom: 60px;
+}
+
+@keyframes background {
+    50% {
+        background: #ab8e8d;
+        box-shadow: 0 -140px 70px -120px #a69cd1 inset,
+        0 -210px 70px -120px #46839f inset,
+        0 -280px 70px -120px plum inset;
+    }
+}
+
+
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: flex-end;
+    margin-right: 60px;
+}
+
+.menu_li {
+    list-style-type: none;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+.menu_hrefs {
+    color: white;
+    font-size: 18px;
+    font-family: Arial;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 8px;
+
+}
+
+.menu_hrefs:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.main_picture {
+
+    display: block;
+    margin: 30px auto;
+}
+
+.main_words {
+    padding-top: 90px;
+}
+
+.menu_hrefs::before {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: lightslategrey;
+    transition: width .5s ease-in-out, left .5s ease-in-out;
+    left: 50%;
+    bottom: 0;
+}
+
+.main-navigation .navbar-default .navbar-nav > li > a::after{
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: lightslategrey;
+    transition: width .5s ease-in-out;
+    left: 50%;
+    bottom: 0;
+}
+
+
+.menu_hrefs:hover::before{
+    width: 100%;
+    left: 0;
+}
+
+.menu_hrefs:hover::after{
+    width: 100%;
+    right: 0;
+}
+
+.name {
+    color: #372c6a;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.utp {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.ul_order {
+    text-align: center;
+    display: block;
+}
+
+.ul_order span {
+    font-family: Arial;
+    color: #372c6a;
+    font-weight: 700 !important;
+
+}
+
+.fa {
+    font-size: 60px;
+    color: white;
+}
+
+.price {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: dimgrey;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.old_price {
+    text-decoration: line-through;
+}
+
+.new_price {
+    margin-left: 20px;
+    color: white;
+}
+
+.main_button {
+    font-size: 18px;
+    padding: 10px;
+    width: 200px;
+    border: solid 2px #372c6a;
+    border-radius: 10px;
+    color: white;
+    background: rgba(55,44,106,.3);
+    display: block;
+    transition: all .4s ease;
+}
+
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.main_button:hover {
+    border-radius: 30px;
+    color: #372c6a;
+    background: white;
+}
+
+
+.main_button_order {
+    font-size: 18px;
+    padding: 10px;
+    width: 200px;
+    border: solid 2px #372c6a;
+    border-radius: 10px;
+    color: white;
+    background: rgba(55,44,106,.6);
+    display: block;
+    transition: all .4s ease;
+}
+
+.main_button_order:hover {
+    border-radius: 30px;
+    color: #372c6a;
+    background: white;
+}
