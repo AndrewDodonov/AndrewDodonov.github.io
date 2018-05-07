@@ -47,8 +47,8 @@ header {
     50% {
         background: #ab8e8d;
         box-shadow: 0 -150px 70px -120px #80706F inset,
-        0 -220px 70px -120px #D5BAB9 inset,
-        0 -280px 70px -120px #D5BAB9 inset;
+        0 -220px 70px -120px #b4acac inset,
+        0 -280px 70px -120px #b4acac inset;
     }
 
     100% {
