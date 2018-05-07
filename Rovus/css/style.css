@@ -25,20 +25,40 @@ h1 {
 header {
     background: #8a9eb9;
     animation: background 6s infinite alternate;
-    box-shadow: 0 -100px 70px -120px teal inset,
+    box-shadow: 0 -150px 70px -120px #46839f inset,
     0 -220px 70px -120px #8bc4d2 inset,
-    0 -280px 70px -120px #bcdb95 inset;
+    0 -280px 70px -120px #9cd1d0 inset;
 
     padding-bottom: 60px;
 }
 
+
 @keyframes background {
+
+    0% {
+        background: #8a9eb9;
+        animation: background 6s infinite alternate;
+        box-shadow: 0 -150px 70px -120px #46839f inset,
+        0 -220px 70px -120px #8bc4d2 inset,
+        0 -280px 70px -120px #9cd1d0 inset;
+    }
+
+
     50% {
         background: #ab8e8d;
         box-shadow: 0 -140px 70px -120px #a69cd1 inset,
-        0 -210px 70px -120px #46839f inset,
-        0 -280px 70px -120px plum inset;
+        0 -210px 70px -120px #9a90c4 inset,
+        0 -280px 70px -120px #a69cd1 inset;
     }
+
+    100% {
+        background: #8a9eb9;
+        animation: background 6s infinite alternate;
+        box-shadow: 0 -150px 70px -120px #46839f inset,
+        0 -220px 70px -120px #8bc4d2 inset,
+        0 -280px 70px -120px #9cd1d0 inset;
+    }
+
 }
 
 
@@ -208,4 +228,9 @@ header {
     border-radius: 30px;
     color: #372c6a;
     background: white;
+}
+
+.first {
+    height: 800px;
+    width: 100%;
 }
