@@ -15,10 +15,21 @@
            height: 100%;
            margin: 0;
            padding: 0;
-           background: #eaeaea;
+           background: #fff;
+       }
+
+       .loading_text {
+           position: fixed;
+           top: 30%;
+           left: 40%;
+           font-family: 'Orbitron', sans-serif;
+           font-size: 30px;
+           color: #423943;
+           text-align: center;
+
        }
        .stage {
-           
+
            z-index: 1000;
            width: 100%;
            height: 100%;
@@ -241,6 +252,8 @@
 
 
 <div class="stage">
+
+    <div class="loading_text">Loading...</div>
     <div class="box">
         <div class="front"></div>
         <div class="back"></div>
