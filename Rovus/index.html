@@ -3,14 +3,265 @@
 <head>
     <meta charset="UTF-8">
     <title>Rovus</title>
+
+
    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+
+   <style>
+
+       html,
+       body {
+           width: 100%;
+           height: 100%;
+           margin: 0;
+           padding: 0;
+           background: #eaeaea;
+       }
+       .stage {
+           
+           z-index: 1000;
+           width: 100%;
+           height: 100%;
+           display: -webkit-box;
+           display: -ms-flexbox;
+           display: flex;
+           -webkit-box-align: center;
+           -ms-flex-align: center;
+           align-items: center;
+           -webkit-box-pack: center;
+           -ms-flex-pack: center;
+           justify-content: center;
+           -webkit-perspective: 1800px;
+           perspective: 1800px;
+           -webkit-transform-style: preserve-3d;
+           transform-style: preserve-3d;
+       }
+       .box {
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           width: 3.75rem;
+           height: 3.75rem;
+           -webkit-transform-style: preserve-3d;
+           transform-style: preserve-3d;
+           -webkit-transform: translate(-50%, -50%) rotateX(-35deg) rotateY(55deg);
+           transform: translate(-50%, -50%) rotateX(-35deg) rotateY(55deg);
+       }
+       .box:nth-child(2) {
+           -webkit-animation: box 4s linear infinite;
+           animation: box 4s linear infinite;
+       }
+       .box:nth-child(2) .left {
+           -webkit-animation: left-side 4s linear infinite;
+           animation: left-side 4s linear infinite;
+       }
+       .box:nth-child(2) .right {
+           -webkit-animation: right-side 4s linear infinite;
+           animation: right-side 4s linear infinite;
+       }
+       .box .front,
+       .box .back,
+       .box .top,
+       .box .bottom,
+       .box .left,
+       .box .right {
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 3.75rem;
+           height: 3.75rem;
+           -webkit-transform-origin: center center;
+           transform-origin: center center;
+       }
+       .box .front {
+           background: #665867;
+           -webkit-transform: translateZ(1.875rem);
+           transform: translateZ(1.875rem);
+       }
+       .box .back {
+           background: #665867;
+           -webkit-transform: translateZ(-1.875rem);
+           transform: translateZ(-1.875rem);
+       }
+       .box .top {
+           background: #706171;
+           -webkit-transform: translateY(-50%) rotateX(90deg);
+           transform: translateY(-50%) rotateX(90deg);
+       }
+       .box .bottom {
+           background: #423943;
+           -webkit-transform: translateY(50%) rotateX(90deg);
+           transform: translateY(50%) rotateX(90deg);
+       }
+       .box .left {
+           background: #776778;
+           -webkit-transform: translateX(-50%) rotateY(90deg);
+           transform: translateX(-50%) rotateY(90deg);
+       }
+       .box .right {
+           background: #524652;
+           -webkit-transform: translateX(50%) rotateY(90deg);
+           transform: translateX(50%) rotateY(90deg);
+       }
+       @-webkit-keyframes box {
+           0% {
+               -webkit-transform: translate(-50%, -50%) rotateX(-35deg) rotateY(55deg) translateZ(-11.25rem);
+               transform: translate(-50%, -50%) rotateX(-35deg) rotateY(55deg) translateZ(-11.25rem);
+           }
+           40% {
+               -webkit-transform: translate(-50%, -50%) rotateX(-35deg) rotateY(55deg) translateZ(11.25rem) rotateY(0);
+               transform: translate(-50%, -50%) rotateX(-35deg) rotateY(55deg) translateZ(11.25rem) rotateY(0);
+           }
+           50% {
+               -webkit-transform: translate(-50%, -50%) rotateX(-35deg) rotateY(55deg) translateZ(11.25rem) rotateY(-180deg);
+               transform: translate(-50%, -50%) rotateX(-35deg) rotateY(55deg) translateZ(11.25rem) rotateY(-180deg);
+           }
+           90% {
+               -webkit-transform: translate(-50%, -50%) rotateX(-35deg) rotateY(55deg) translateZ(-11.25rem) rotateY(-180deg);
+               transform: translate(-50%, -50%) rotateX(-35deg) rotateY(55deg) translateZ(-11.25rem) rotateY(-180deg);
+           }
+           100% {
+               -webkit-transform: translate(-50%, -50%) rotateX(-35deg) rotateY(55deg) translateZ(-11.25rem);
+               transform: translate(-50%, -50%) rotateX(-35deg) rotateY(55deg) translateZ(-11.25rem);
+           }
+       }
+       @keyframes box {
+           0% {
+               -webkit-transform: translate(-50%, -50%) rotateX(-35deg) rotateY(55deg) translateZ(-11.25rem);
+               transform: translate(-50%, -50%) rotateX(-35deg) rotateY(55deg) translateZ(-11.25rem);
+           }
+           40% {
+               -webkit-transform: translate(-50%, -50%) rotateX(-35deg) rotateY(55deg) translateZ(11.25rem) rotateY(0);
+               transform: translate(-50%, -50%) rotateX(-35deg) rotateY(55deg) translateZ(11.25rem) rotateY(0);
+           }
+           50% {
+               -webkit-transform: translate(-50%, -50%) rotateX(-35deg) rotateY(55deg) translateZ(11.25rem) rotateY(-180deg);
+               transform: translate(-50%, -50%) rotateX(-35deg) rotateY(55deg) translateZ(11.25rem) rotateY(-180deg);
+           }
+           90% {
+               -webkit-transform: translate(-50%, -50%) rotateX(-35deg) rotateY(55deg) translateZ(-11.25rem) rotateY(-180deg);
+               transform: translate(-50%, -50%) rotateX(-35deg) rotateY(55deg) translateZ(-11.25rem) rotateY(-180deg);
+           }
+           100% {
+               -webkit-transform: translate(-50%, -50%) rotateX(-35deg) rotateY(55deg) translateZ(-11.25rem);
+               transform: translate(-50%, -50%) rotateX(-35deg) rotateY(55deg) translateZ(-11.25rem);
+           }
+       }
+       @-webkit-keyframes left-side {
+           0% {
+               background: #776778;
+           }
+           40% {
+               background: #776778;
+           }
+           50% {
+               background: #524652;
+           }
+           95% {
+               background: #524652;
+           }
+           100% {
+               background: #776778;
+           }
+       }
+       @keyframes left-side {
+           0% {
+               background: #776778;
+           }
+           40% {
+               background: #776778;
+           }
+           50% {
+               background: #524652;
+           }
+           95% {
+               background: #524652;
+           }
+           100% {
+               background: #776778;
+           }
+       }
+       @-webkit-keyframes right-side {
+           0% {
+               background: #524652;
+           }
+           40% {
+               background: #524652;
+           }
+           50% {
+               background: #776778;
+           }
+           95% {
+               background: #776778;
+           }
+           100% {
+               background: #524652;
+           }
+       }
+       @keyframes right-side {
+           0% {
+               background: #524652;
+           }
+           40% {
+               background: #524652;
+           }
+           50% {
+               background: #776778;
+           }
+           95% {
+               background: #776778;
+           }
+           100% {
+               background: #524652;
+           }
+       }
+
+
+   </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+
+
+
+
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
+
+
 </head>
+
+
 <body>
+
+
+
+<div class="stage">
+    <div class="box">
+        <div class="front"></div>
+        <div class="back"></div>
+        <div class="top"></div>
+        <div class="bottom"></div>
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="box">
+        <div class="front"></div>
+        <div class="back"></div>
+        <div class="top"></div>
+        <div class="bottom"></div>
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</div>
+
+
+
+
 <header>
     <nav>
         <ul class="menu">
@@ -53,5 +304,11 @@
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/script.js"></script>
+
+<script type="text/javascript">$(window).on('load', function () {
+    var $preloader = $('.stage')
+
+    $preloader.delay(1500).fadeOut('slow');
+});</script>
 </body>
 </html>
