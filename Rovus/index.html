@@ -5,13 +5,14 @@
     <title>Rovus</title>
 
 
-   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
    <style>
 
        html,
        body {
            width: 100%;
+           min-height: 640px;
            height: 100%;
            margin: 0;
            padding: 0;
@@ -28,8 +29,19 @@
            text-align: center;
 
        }
-       .stage {
 
+
+       .load {
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           background: white;
+           z-index: 500;
+       }
+
+       .stage {
            z-index: 1000;
            width: 100%;
            height: 100%;
@@ -231,26 +243,14 @@
    </style>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-
-
-
-
-
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
-
-
 </head>
-
-
 <body>
-
-
-
+<div class="load">
 <div class="stage">
 
     <div class="loading_text">Loading...</div>
@@ -271,11 +271,16 @@
         <div class="right"></div>
     </div>
 </div>
-
-
-
-
+</div>
 <header>
+<div class="burger">
+    <div class="burger_5">
+        <span class="line_one_5"></span>
+        <span class="line_two_5"></span>
+        <span class="line_four_5"></span>
+        <span class="line_three_5"></span>
+    </div>
+</div>
     <nav>
         <ul class="menu">
             <li class="menu_li"><a class="menu_hrefs" href="">Гарантии</a></li>
@@ -284,8 +289,17 @@
             <li class="menu_li"><a class="menu_hrefs" href="">Контакты</a></li>
         </ul>
     </nav>
-    <div class="burger"></div>
+    <div class="b">
+    <div class="burger_menu">
+        <ul class="menu_burger">
+            <li class="menu_li_burger"><a class="menu_hrefs_burger" href="">Гарантии</a></li>
+            <li class="menu_li_burger"><a class="menu_hrefs_burger" href="">Заказать</a></li>
+            <li class="menu_li_burger"><a class="menu_hrefs_burger" href="">Подробнее</a></li>
+            <li class="menu_li_burger"><a class="menu_hrefs_burger" href="">Контакты</a></li>
+        </ul>
 
+    </div>
+    </div>
     <div class="container main_words">
         <div class="row">
             <div class="col-lg-6  animated fadeInDown">
@@ -306,22 +320,27 @@
 
 
 
-                <div class="col-lg-6"><img class="main_picture animated fadeInUp" src="img/main.png"> </div>
+                <div class="col-lg-6"><img class="main_picture animated fadeInUp" src="img/main.png">
+                    <img class="main_picture_small animated fadeInUp" src="img/main_300.png">
+
+                </div>
 
     </div>
     </div>
-
 </header>
 
 <section class="first"></section>
-
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/script.js"></script>
 
 <script type="text/javascript">$(window).on('load', function () {
-    var $preloader = $('.stage')
+    var $preloader = $('.load')
+
 
     $preloader.delay(1500).fadeOut('slow');
+
+    var $burger = $('.burger')
+    $burger.css({top:"-20px",right:"40px"})
 });</script>
 </body>
 </html>
