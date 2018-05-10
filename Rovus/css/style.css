@@ -1,5 +1,6 @@
 body {
     font-family: 'Orbitron', sans-serif;
+    background: white;
 }
 
 
@@ -92,9 +93,9 @@ header {
     color: white;
 }
 
-.main_picture {
+.main_picture, .main_picture_small {
 
-    display: block;
+
     margin: 30px auto;
 }
 
@@ -170,7 +171,7 @@ header {
 
 .price {
     text-align: center;
-    font-size: 60px;
+
     margin-bottom: 30px;
     font-weight: bold;
     color: dimgrey;
@@ -233,4 +234,190 @@ header {
 .first {
     height: 800px;
     width: 100%;
+    background: #46839f;
+}
+
+@media screen and (min-width: 645px) {
+    nav {
+        display: block;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .main_picture {
+        display: block;
+    }
+
+    .main_picture_small {
+        display: none;
+    }
+
+    .price {
+        font-size: 60px;
+    }
+
+    .burger_menu {
+        display: none;
+    }
+}
+
+
+.show {
+    top: 0;
+}
+
+.b {
+    position: fixed;
+    top: -1000px;
+    right: 0;
+    z-index: 90;
+}
+
+@media screen and (max-width: 645px) {
+
+    .burger_menu {
+        display: block;
+        position: fixed;
+        height: 100%;
+        right: 0;
+        background: rgba(255,255,255,.9);
+        z-index: 90;
+        width: 100%;
+
+        transition: 1s top ease;
+    }
+
+    .burger {
+        display: block;
+        position: fixed;
+        top: -1000px;
+        right: 40px;
+        z-index: 100;
+        transition: top 1s ease;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .main_button {
+        margin-top: 15px;
+    }
+
+    .main_picture {
+        display: none;
+    }
+
+    .main_picture_small {
+        display: block;
+    }
+
+    .price {
+        font-size: 40px;
+    }
+
+    .menu_li_burger {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .menu_burger {
+        margin-top: 150px;
+    }
+
+    .menu_hrefs_burger {
+        color: #372c6a;
+        font-size: 25px;
+    }
+}
+
+
+
+.burger_5 {
+    position: relative;
+    top: calc(2*25px);
+    left: calc(2*25px);
+    width: calc(2*60px);
+    height: calc(2*60px);
+    cursor: pointer;
+
+}
+
+.line_one_5 {
+    top: calc(2*20px);
+    left: calc(2*10px);
+    position: absolute;
+    display: block;
+    height: calc(2*2px);
+    width: calc(2*30px);
+    background: #372c6a;
+    transition: all 1s ease;
+
+
+}
+
+.line_two_5 {
+    top: calc(2*30px);
+    left: calc(2*10px);
+    position: absolute;
+    display: block;
+    height: calc(2*2px);
+    width: calc(2*30px);
+    background: #372c6a;
+    transition: all 1s ease;
+}
+
+.line_four_5 {
+    top: calc(2*30px);
+    left: calc(2*10px);
+    position: absolute;
+    display: block;
+    height: calc(2*2px);
+    width: calc(2*30px);
+    background: #372c6a;
+    transition: all 1s ease;
+}
+
+.line_three_5 {
+    top: calc(2*40px);
+    left: calc(2*10px);
+    position: absolute;
+    display: block;
+    height: calc(2*2px);
+    width: calc(2*30px);
+    background: #372c6a;
+    transition: all 1s ease;
+}
+
+.rotate_one_5 {
+    transform: rotate(-90deg);
+}
+
+.rotate_two_5 {
+
+    transform: rotate(-495deg);
+}
+
+.rotate_four_5 {
+    transform: rotate(-405deg);
+
+}
+
+.go_three_5 {
+    transform: rotate(-90deg);
+}
+
+
+.rotate_up {
+
+    width: 0;
+
+}
+
+.rotate_down {
+
+    width: 0;
+    left: 80px;
 }
