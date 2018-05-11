@@ -25,15 +25,11 @@ h1 {
 
 header {
     background: #8a9eb9;
-
     box-shadow: 0 -150px 70px -120px #46839f inset,
     0 -220px 70px -120px #8bc4d2 inset,
     0 -280px 70px -120px #9cd1d0 inset;
-
     padding-bottom: 60px;
 }
-
-
 
 .menu {
     display: flex;
@@ -135,7 +131,7 @@ header {
 
 }
 
-.fa {
+.fa-handshake-o, .fa-truck {
     font-size: 60px;
     color: white;
 }
@@ -203,9 +199,9 @@ header {
 }
 
 .first {
-    height: 800px;
+
     width: 100%;
-    background: #46839f;
+
 }
 
 @media screen and (min-width: 645px) {
@@ -266,7 +262,28 @@ header {
 
     }
 
+    .right_logo_text {
+        text-align: left !important;
+        margin-top: 70px;
+    }
 
+    .left_logo_text {
+        text-align: right !important;
+        margin-top: 70px;
+    }
+
+    .working {
+        width: 350px;
+    }
+
+    .slider {
+        width: 640px;
+        padding-top: 320px; /*That helps bring the labels down*/
+    }
+
+    .mar1 {
+        width: 100px
+    }
 
 }
 
@@ -337,6 +354,24 @@ header {
     .menu_hrefs_burger {
         color: #372c6a;
         font-size: 25px;
+    }
+
+    .working {
+        width: 300px;
+    }
+
+    .slider {
+        width: 320px;
+        padding-top: 160px; /*That helps bring the labels down*/
+    }
+
+
+
+    .slider>img{
+        width: 320px;
+    }
+    .mar1 {
+        width: 50px
     }
 }
 
@@ -428,3 +463,246 @@ header {
     width: 0;
     left: 80px;
 }
+
+.first {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    box-sizing: content-box;
+}
+
+
+.first_img {
+    display: block;
+    margin: 0 auto;
+}
+
+.first_paragraph {
+    color: #0B2349;
+    margin-top: 50px;
+}
+
+.first h3 {
+    text-align: center;
+
+    background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+    margin-top: 40px;
+    font-weight: 700;
+}
+
+.first_second {
+    margin-top: 40px;
+}
+
+.icons, .icon_text {
+
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+}
+
+.icons {
+    font-size: 36px;
+}
+
+
+.first_form {
+    background: url("../img/room.jpg") fixed no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 60px;
+}
+
+.first_form img {
+    display: block;
+    margin: 30px auto;
+}
+
+.question {
+    color: white;
+    font-size: 30px;
+    font-family: Arial;
+    text-align: center;
+}
+
+
+.question_form {
+
+    margin: 40px auto;
+}
+.question_input, .question_button {
+    display: block;
+    margin: 30px auto;
+}
+
+.question_input {
+    width: 300px;
+    height: 80px;
+    background: rgba(0,0,0,.4);
+    border: solid #0D61BC 2px;
+    border-radius: 8px;
+    color: white;
+    text-transform: capitalize;
+    padding-left: 20px;
+    transition: all 1s ease;
+}
+
+.question_button {
+    background: rgba(13,97,188,.5);
+    width: 300px;
+    height: 80px;
+    color: white;
+    transition: background 1s ease;
+    border: solid white 2px;
+    border-radius: 8px;
+}
+
+.question_button:hover {
+    background: #0D61BC;
+
+}
+
+.question_input:focus {
+    background: rgba(0,0,0,.8);
+    border-radius: 0;
+
+}
+
+.question_text {
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    font-family: 'IBM Plex Serif', serif;
+    text-align: center;
+}
+
+.second {
+    border-radius: 20% 0 20% 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: linear-gradient(45deg, #e9778c 33%, #0D61BC 66%, #8AA9D6);
+    text-align: center;
+    color: white;
+}
+.second span {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.working {
+    display: block;
+
+    margin: 0 auto;
+}
+
+#fruits{
+    border:10px solid #000;
+}
+
+
+
+
+/*---------------------*/
+
+/*Time for the CSS*/
+
+.slider{
+     /*Same as width of the large image*/
+    position: relative;
+    /*Instead of height we will use padding*/
+
+
+    margin: 100px auto;
+
+    /*Lets add a shadow*/
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+
+/*Last thing remaining is to add transitions*/
+.slider>img{
+    position: absolute;
+    left: 0; top: 0;
+    transition: all 0.5s;
+}
+
+.slider input[name='slide_switch'] {
+    display: none;
+}
+
+.slider label {
+    /*Lets add some spacing for the thumbnails*/
+    margin: 18px 0 0 18px;
+    border: 3px solid #999;
+
+    float: left;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    /*Default style = low opacity*/
+    opacity: 0.6;
+}
+
+.slider label img{
+    display: block;
+}
+
+/*Time to add the click effects*/
+.slider input[name='slide_switch']:checked+label {
+    border-color: #666;
+    opacity: 1;
+}
+/*Clicking any thumbnail now should change its opacity(style)*/
+/*Time to work on the main images*/
+.slider input[name='slide_switch'] ~ img {
+    opacity: 0;
+    transform: scale(1.1);
+}
+/*That hides all main images at a 110% size
+On click the images will be displayed at normal size to complete the effect
+*/
+.slider input[name='slide_switch']:checked+label+img {
+    opacity: 1;
+    transform: scale(1);
+}
+/*Clicking on any thumbnail now should activate the image related to it*/
+
+/*We are done :)*/
+
+
+.carousel_section {
+    padding-bottom: 80px;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.carousel_section span {
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+    font-size: 25px;
+}
+
+.carousel_section p {
+    color: #0B2349;
+
+}
+
+@media screen and (min-width: 840px) {
+
+    .carousel_paragraph {
+
+        text-align: right;
+        padding-top: 90px;
+    }
+}
+
