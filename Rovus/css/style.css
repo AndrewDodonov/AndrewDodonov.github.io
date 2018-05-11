@@ -25,41 +25,12 @@ h1 {
 
 header {
     background: #8a9eb9;
-    animation: background 6s infinite alternate;
+
     box-shadow: 0 -150px 70px -120px #46839f inset,
     0 -220px 70px -120px #8bc4d2 inset,
     0 -280px 70px -120px #9cd1d0 inset;
 
     padding-bottom: 60px;
-}
-
-
-@keyframes background {
-
-    0% {
-        background: #8a9eb9;
-        animation: background 6s infinite alternate;
-        box-shadow: 0 -150px 70px -120px #46839f inset,
-        0 -220px 70px -120px #8bc4d2 inset,
-        0 -280px 70px -120px #9cd1d0 inset;
-    }
-
-
-    50% {
-        background: #ab8e8d;
-        box-shadow: 0 -150px 70px -120px #80706F inset,
-        0 -220px 70px -120px #b4acac inset,
-        0 -280px 70px -120px #b4acac inset;
-    }
-
-    100% {
-        background: #8a9eb9;
-        animation: background 6s infinite alternate;
-        box-shadow: 0 -150px 70px -120px #46839f inset,
-        0 -220px 70px -120px #8bc4d2 inset,
-        0 -280px 70px -120px #9cd1d0 inset;
-    }
-
 }
 
 
@@ -261,6 +232,42 @@ header {
     .burger_menu {
         display: none;
     }
+
+
+    header {
+        animation: background 6s infinite alternate;
+    }
+
+    @keyframes background {
+
+        0% {
+            background: #8a9eb9;
+            animation: background 6s infinite alternate;
+            box-shadow: 0 -150px 70px -120px #46839f inset,
+            0 -220px 70px -120px #8bc4d2 inset,
+            0 -280px 70px -120px #9cd1d0 inset;
+        }
+
+
+        50% {
+            background: #ab8e8d;
+            box-shadow: 0 -150px 70px -120px #80706F inset,
+            0 -220px 70px -120px #b4acac inset,
+            0 -280px 70px -120px #b4acac inset;
+        }
+
+        100% {
+            background: #8a9eb9;
+            animation: background 6s infinite alternate;
+            box-shadow: 0 -150px 70px -120px #46839f inset,
+            0 -220px 70px -120px #8bc4d2 inset,
+            0 -280px 70px -120px #9cd1d0 inset;
+        }
+
+    }
+
+
+
 }
 
 
@@ -337,7 +344,7 @@ header {
 
 .burger_5 {
     position: relative;
-    top: calc(2*25px);
+    
     left: calc(2*25px);
     width: calc(2*60px);
     height: calc(2*60px);
