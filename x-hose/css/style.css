@@ -99,7 +99,7 @@ header::before{
 
 .b {
     position: fixed;
-    top: -1000px;
+    top: -10000px;
     right: 0;
     z-index: 90;
 }
@@ -172,8 +172,8 @@ header::before{
 @media screen and (min-width: 450px) {
     .logo {
         display: block;
-        margin: 30px auto;
-        width: 350px;
+        margin: 0 auto;
+        width: 550px;
     }
 
     .nasadka img {
@@ -206,6 +206,10 @@ header::before{
     .car {
         display: none;
     }
+
+    .red_words {
+        font-size: 15px;
+    }
 }
 
 @media screen and (min-width: 990px) {
@@ -220,7 +224,7 @@ header::before{
         padding-bottom: 80px;
     }
     .logo {
-        margin-top: 200px;
+        margin-top: 40px;
     }
 
     h4 {
@@ -229,6 +233,10 @@ header::before{
     -webkit-text-fill-color: transparent;
     color: #0B2349;
 }
+
+    .red_words {
+        font-size: 25px;
+    }
 }
 
 @media screen and (max-width: 990px) {
@@ -245,6 +253,10 @@ header::before{
     }
     .grass {
         display: none;
+    }
+
+    .red_words {
+        font-size: 20px;
     }
 }
 
@@ -577,7 +589,7 @@ li {
 }
 
 .tap {
-    width: 250px;
+    width: 90%;
     display: block;
     margin: 0 auto;
 }
@@ -861,4 +873,13 @@ footer {
 .tabl-right {
     margin-top: 30px;
     width: 320px
+}
+
+.red_words {
+    margin-top: 20px;
+    transform: rotate(10deg);
+    color: #d80027 !important;
+
+    text-align: center;
+    font-weight: 700;
 }
