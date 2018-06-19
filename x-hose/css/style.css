@@ -390,7 +390,7 @@ h4 {
     padding: 10px;
     border: solid black 2px;
     border-radius: 25px;
-    width: 170px;
+    min-width: 170px;
     text-align: center;
     text-decoration: none;
     color: #d80027;
