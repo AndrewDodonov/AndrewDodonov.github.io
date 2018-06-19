@@ -6,7 +6,6 @@ body {
 header{
     padding: 100px;
     margin: 0;
-
     color: black;
     overflow:hidden;
     position: relative;
@@ -30,10 +29,10 @@ header::after{
 .inside {
 
 
-    background: white;
+
     width: 100%;
 
-    padding-bottom: 50px;
+    padding-bottom: 10px;
 }
 
 h1 {
@@ -69,7 +68,70 @@ header::before{
 
     background-size: cover;
     z-index: -100;
-    margin-top: -100px;
+    margin-top: -10px;
+}
+
+.first h3 {
+    margin-top: 50px;
+}
+
+.grass {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.fa-tint, h2, .h3 {
+    background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+}
+
+
+
+.burger {
+    display: block;
+}
+
+.show {
+    top: 0;
+}
+
+.b {
+    position: fixed;
+    top: -1000px;
+    right: 0;
+    z-index: 90;
+}
+
+.burger_menu {
+    display: block;
+    position: fixed;
+    height: 100%;
+    right: 0;
+    background: rgba(255,255,255,.9);
+    z-index: 90;
+    width: 100%;
+
+    transition: 1s top ease;
+}
+
+.menu_li_burger {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu_burger {
+    margin-top: 150px;
+}
+
+.menu_hrefs_burger {
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 
@@ -80,11 +142,16 @@ header::before{
         width: 250px;
     }
 
+    nav {
+        display: none;
+    }
+
+
 }
 
 @media screen and (min-width: 780px) {
     .deg {
-        background: linear-gradient(-177deg, white 50%, transparent 50%);
+        background: linear-gradient(-177deg, green 50%, transparent 50%);
         height: 200px;
         width: 100%;
 
@@ -98,28 +165,95 @@ header::before{
         width: 500px;
     }
 
+    .burger {
+        display: none;
+    }
+
+
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 450px) {
     .logo {
         display: block;
         margin: 30px auto;
         width: 350px;
     }
-    .burger {
-        display: none;
+
+    .nasadka img {
+        display: block;
+        margin: 30px auto;
+        width: 450px;
+        box-sizing: border-box;
+        transition: all ease 1s;
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .logo {
-        width: 220px;
+        width: 300px;
+        display: block;
+        margin-left: -70px;
     }
     .burger {
         display: block;
     }
+
+    .nasadka-img {
+        width: 320px;
+    }
+
+    .h4 {
+        font-size: 20px;
+    }
+
+    .car {
+        display: none;
+    }
 }
 
+@media screen and (min-width: 990px) {
+    .car {
+        margin-top: -70px;
+    }
+    header {
+        background: url('../img/Grass-Tree.jpg');
+    }
+    .left {
+        background: rgba(255,255,255,.7);
+        padding-bottom: 80px;
+    }
+    .logo {
+        margin-top: 200px;
+    }
+
+    h4 {
+    background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+}
+}
+
+@media screen and (max-width: 990px) {
+
+    header {
+        background: url('../img/grass_texture1000.jpg');
+    }
+    .h4 {
+        color: black !important;
+    }
+
+    .button_order, .button_question {
+        background: white;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .button_question {
+        font-size: 15px;
+    }
+
+}
 
 
 h3 {
@@ -160,6 +294,7 @@ h4 {
     position: fixed;
     top:25px;
     right: 25px;
+    z-index: 1000;
 }
 
 .burger {
@@ -228,18 +363,28 @@ h4 {
 
 .buttons {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 40px;
-    margin-bottom: 15px;
+    margin-bottom: 110px;
 }
 
-.button_order {
-    margin-right: 10px;
+
+
+@media screen and (min-width: 590px) {
+    .button_order {
+        margin-right: 10px;
+    }
+    .button_question {
+        margin-left: 10px;
+    }
 }
 
-.button_question {
-    margin-left: 10px;
+.button_order, .button_question {
+    margin-top: 20px;
 }
+
+
 .button_order, .button_question {
     display: block;
     padding: 10px;
@@ -398,7 +543,7 @@ nav {
     left: 0;
     height: 60px;
     width: 100%;
-    background: white;
+    background: rgba(255,255,255,.6);
     box-sizing: border-box;
     z-index: 5;
 }
@@ -442,13 +587,7 @@ li {
     margin-bottom: 50px;
 }
 
-.nasadka img {
-    display: block;
-    margin: 30px auto;
-    width: 450px;
-    box-sizing: border-box;
-    transition: all ease 1s;
-}
+
 
 .nasadka img:hover {
     width: 460px;
@@ -459,12 +598,7 @@ li {
 }
 
 
-.fa-tint, h4, h2, .h3 {
-    background: linear-gradient(45deg, #0B2349 33%, #0D61BC 66%, #8AA9D6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: #0B2349;
-}
+
 
 .fa-tint {
     font-size: 20px;
@@ -698,4 +832,36 @@ footer {
 .span + span {
     font-size: 20px;
     font-weight: 500;
+}
+
+.tabl {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.tabl ul {
+    display: block;
+    margin: 50px auto;
+}
+
+.x {
+    font-size: 30px;
+    font-style: italic;
+    color: red;
+    text-shadow: grey 2px 2px;
+}
+
+.tabl ul li {
+    background: #e3e5e1;
+    text-align: center;
+}
+
+.tabl-left {
+    width: 250px;
+}
+
+.tabl-right {
+    margin-top: 30px;
+    width: 320px
 }
