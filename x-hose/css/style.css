@@ -61,10 +61,7 @@ header::before{
 .first {
     height: 600px;
     width: 100%;
-    background: linear-gradient(
-            rgba(0, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.7)
-    ),url("../img/d67923fd3a82b56925cc6162c80ca3cd.jpg") fixed;
+    background: url("../img/d67923fd3a82b56925cc6162c80ca3cd1.jpg") fixed;
 
     background-size: cover;
     z-index: -100;
@@ -245,6 +242,9 @@ header::before{
 
     .button_order, .button_question {
         background: white;
+    }
+    .grass {
+        display: none;
     }
 }
 
@@ -618,10 +618,7 @@ li {
 .question_section {
     padding-top: 10px;
     padding-bottom: 40px;
-    background: linear-gradient(
-            rgba(0, 0, 0, 0.6),
-            rgba(0, 0, 0, 0.6)
-    ),url("../img/grass-1366796906dabs.jpg") fixed;
+    background: url("../img/grass-1366796906dabs1.jpg") fixed;
 
     background-size: cover;
 }
