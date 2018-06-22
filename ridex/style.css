@@ -283,7 +283,7 @@ padding-left: 25px;
 padding-top:10px;
 margin-left: 70px;
 list-style: none;
-color: 90064c;
+color: #90064c;
 font-size: 17px;
 }
 
@@ -363,9 +363,10 @@ margin-left: 47px;
 }
 
 #fifth_text{
-	background: url("images/char_text_bg.png") no-repeat left top;
+	background: url("images/char_text_bg.png") left top;
+	background-size: cover;
 	width: 1077px;
-	height: 114px;
+   border-radius: 30px;
 	margin-left: -38px;
 	margin-top: 41px;
 }
@@ -723,9 +724,18 @@ padding-top: 50px;
 #after_shipping{
 	margin-top: 40px;
 	padding-top: 80px;
-	background: url(images/akcia_header2.png) top center no-repeat;
+
 	text-align: center;
 	padding-bottom: 50px;
+}
+
+.after_shipping_words {
+	background: linear-gradient(to right, #53005b, #DF8411);
+	color: white;
+	font-size: 50px;
+	display: block;
+	margin: 30px auto;
+	width: 70%;
 }
 
 #after_shipping a{
@@ -742,4 +752,24 @@ padding-top: 50px;
 	font-size: 50px;
 	float: left;
 	padding-left: 19px;
+}
+
+footer {
+	display: flex;
+    justify-content: center;
+	padding-bottom: 40px;
+}
+
+.footer_logo {
+	display: block;
+	width: 100px;
+	height: 80px;
+	padding-right: 200px;
+}
+
+.footer_text {
+	margin-top: 30px;
+	font-weight: 700;
+	text-align: left;
+
 }
