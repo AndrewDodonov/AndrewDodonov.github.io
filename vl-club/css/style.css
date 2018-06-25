@@ -1,0 +1,313 @@
+
+.consultation {
+    z-index: 10;
+    transform: rotate(-90deg);
+    position: fixed;
+    top: -2000px;
+    right: -100px;
+    background: cornflowerblue;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    -webkit-animation: pulsing 2s infinite;
+    animation: pulsingus 2s infinite;
+    transition: top ease 1s;
+}
+
+.consultation span {
+    margin-left: 15px;
+}
+
+.consultation:hover {
+
+}
+
+
+
+@keyframes pulsingus {
+    0% {
+        padding: 10px;
+    }
+    50% {
+        padding: 15px;
+    }
+    100% {
+        padding: 10px;
+    }
+}
+
+
+.glob {
+    position: static;
+
+    width:30px;
+    border-radius: 50%;
+    box-shadow: grey 3px 3px 20px;
+    animation: rotating 4s infinite;
+}
+
+
+
+@keyframes rotating {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    3.125% {
+        transform: rotate(11.25deg);
+    }
+
+    6.25%  {
+        transform: rotate(22.5deg);
+    }
+
+    9.375% {
+        transform: rotate(33.75deg);
+    }
+
+    12.5% {
+        transform: rotate(45deg);
+    }
+
+    15.625% {
+        transform: rotate(56.25deg);
+    }
+
+    18.75% {
+        transform: rotate(67.5deg);
+    }
+
+    21.875% {
+        transform: rotate(78.75deg);
+    }
+
+    25% {
+        transform: rotate(90deg);
+    }
+
+    28.125% {
+        transform: rotate(101.25deg);
+    }
+
+
+    31.25% {
+        transform: rotate(112.5deg)
+    }
+
+    34.375% {
+        transform: rotate(123.75deg);
+    }
+
+    37.5% {
+        transform: rotate(135deg);
+    }
+
+    40.625% {
+        transform: rotate(146.25deg);
+    }
+
+    43.75% {
+        transform: rotate(157.5deg);
+    }
+
+    46.875% {
+        transform: rotate(168.75deg)
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    53.125% {
+        transform: rotate(191.25deg);
+    }
+
+    56.25% {
+        transform: rotate(202.5deg);
+    }
+
+    59.375% {
+        transform: rotate(213.75deg);
+    }
+
+    62.5% {
+        transform: rotate(225deg);
+    }
+
+    68.75% {
+        transform: rotate(247.5deg);
+    }
+
+    71.875% {
+        transform: rotate(258.75deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+
+    78.125% {
+        transform: rotate(281.25deg);
+    }
+
+    81.25% {
+        transform: rotate(292.5deg);
+    }
+
+    84.375% {
+        transform: rotate(303.75deg);
+    }
+
+    87.5% {
+        transform: rotate(315deg);
+    }
+
+    90.125% {
+        transform: rotate(326.25deg);
+    }
+
+    93.75% {
+        transform: rotate(337.5deg);
+    }
+
+    96.875% {
+        transform: rotate(348.75deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.main {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background: url("../img/boeing-747-airliner-1.jpg") fixed no-repeat;
+    background-size: cover;
+}
+
+.send_form {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.form_input {
+    width: 80%;
+    display: block;
+    margin: 20px auto;
+    height: 40px;
+    padding-left: 20px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: solid grey 1px;
+    transition: all .3s ease;
+}
+
+.form_input:focus {
+    border-left: solid blue 5px;
+    padding-left: 15px;
+    box-shadow: grey 1px 1px 8px;
+}
+
+.form_input:hover {
+    box-shadow: grey 1px 1px 8px;
+}
+
+[type="submit"] {
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 40px;
+    border: transparent 1px;
+    background: #006DF0;
+    color: white;
+    transition: background .3s ease;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+[type="submit"]:hover {
+    cursor: pointer;
+    background: white;
+    color: #006DF0;
+    border-radius: 3px;
+    box-shadow: grey 1px 1px 8px;
+}
+
+.question_form_text {
+    padding-top: 50px;
+    color: dimgrey;
+    font-size: 17px;
+}
+
+.question_form_text span {
+    font-weight: 500;
+    font-size: 20px;
+
+}
+
+.question_ico {
+    padding-top: 50px;
+    color: blue
+}
+
+.question_ico_img {
+    display: block;
+    width: 61px;
+    margin: 0 auto;
+}
+
+.best_choice {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.image_block {
+
+    display: block;
+    width: 51px;
+    margin: 30px auto;
+}
+
+.image_text_block_header, .image_text_block, .transport_pluses_text_header, .transport_pluses_text {
+    text-align: center;
+}
+
+
+.image_text_block_header {
+    color: #006DF0;
+    font-size: 20px;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.transport_pluses_image {
+    width: 51px;
+    display: block;
+    margin: 20px auto;
+}
+
+.transport_pluses_text_header, .transport_pluses_text {
+    color: white;
+}
+
+.section_header {
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    color: #006DF0;
+}
+
+.section_header_white {
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+}
