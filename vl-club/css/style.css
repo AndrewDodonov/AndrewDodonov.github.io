@@ -1,3 +1,41 @@
+.h3_main {
+    color: #006DF0;
+    text-align: center;
+    font-family: Arial;
+}
+
+.keys {
+    width: 80px;
+    display: block;
+    margin: 20px auto;
+}
+
+
+.utp_background {
+    background: #006DF0;
+    padding-bottom: 40px;
+}
+
+.utp_backgroun_main_text {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    padding-top: 30px;
+}
+
+.utp_ico {
+    width: 70px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+
+}
+
+.utp_text {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
 
 .consultation {
     z-index: 10;
@@ -311,3 +349,55 @@
     font-size: 25px;
     color: white;
 }
+
+.skill {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+
+}
+
+.digit {
+
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    background: #006DF0;
+    padding-top: 5px;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.skills_text {
+    display: block;
+    width: 70%;
+    padding-top: 15px;
+    padding-left: 20px;
+    font-size: 22px;
+    color: dimgrey;
+}
+
+.mission {
+    margin-bottom: 40px;
+}
+
+.mission_ico {
+    width: 70px;
+    margin: 20px auto;
+}
+
+.mission_text {
+    text-align: center;
+    font-size: 18px;
+    color: dimgrey;
+}
+
+.mission_text span {
+    font-size: 25px;
+    color: #006DF0;
+}
+
+
