@@ -1,0 +1,119 @@
+.head {
+    background: url("img_land/main_background.jpg") fixed;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+}
+
+.head_right {
+    background: rgba(72,88,188,.5);
+    height: 800px;
+    margin-right: 0 !important;
+
+}
+
+.head_header {
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 35px;
+    text-shadow: #6c757d 3px 3px 10px;
+}
+
+.head_advantage {
+    display: flex;
+    margin-top: 30px;
+
+}
+
+@media screen and (max-width: 990px) {
+    .head_advantage {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .head_advantage {
+        margin-left: 20%;
+    }
+
+    .head_advantage_main_taxt {
+        display: block;
+        width: 85%;
+        margin: 20px auto;
+    }
+}
+
+.head_advantage_svg {
+    width: 51px;
+}
+
+.head_advantage_text {
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+
+}
+
+.head_advantage_main_taxt {
+    color: white;
+
+    font-size: 18px;
+
+}
+
+.price {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.price_old {
+    text-decoration: line-through;
+    color: #6c757d;
+
+}
+
+.price_old + sup {
+    font-size: 30px;
+    color: #6c757d;
+}
+
+
+.price_new {
+    color: white;
+    text-shadow: #6c757d 3px 3px 10px;
+
+}
+
+.price_new + sup {
+    font-size: 30px;
+    color: white;
+    text-shadow: #6c757d 3px 3px 10px;
+}
+
+@media screen and (max-width: 640px) {
+    .button {
+        font-size: 15px;
+    }
+
+
+}
+
+@media screen and (max-width: 420px) {
+    .head {
+        height: 950px;
+    }
+
+    .head_right {
+        height: 950px;
+    }
+}
+
+.consultation {
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    text-shadow: #6c757d 3px 3px 10px;
+}
