@@ -1,3 +1,5 @@
+
+
 .head {
     background: url("img_land/main_background.jpg") fixed;
     background-size: cover;
@@ -6,7 +8,7 @@
 }
 
 .head_right {
-    background: rgba(72,88,188,.5);
+    background: rgba(72,88,188,.7);
     height: 800px;
     margin-right: 0 !important;
 
@@ -22,6 +24,8 @@
 
 .head_advantage {
     display: flex;
+    display: -webkit-flex;
+    display: -webkit-box;
     margin-top: 30px;
 
 }
@@ -29,6 +33,12 @@
 @media screen and (max-width: 990px) {
     .head_advantage {
         margin-left: 10%;
+    }
+
+    .head_advantage_main_taxt {
+        display: block;
+        width: 85%;
+        margin: 20px auto;
     }
 }
 
@@ -46,12 +56,14 @@
 
 .head_advantage_svg {
     width: 51px;
+    display: block;
 }
 
 .head_advantage_text {
     color: white;
     font-size: 30px;
     margin-left: 20px;
+    display: block;
 
 }
 
@@ -116,4 +128,91 @@
     color: white;
     font-weight: 700;
     text-shadow: #6c757d 3px 3px 10px;
+}
+
+.brecks_kinds_table {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: block;
+
+    border-bottom: rgba(72,88,188,.4) 1px solid;
+}
+
+.brecks_kinds_photo {
+    margin: 10px;
+    width: 130px;
+}
+
+.grey_td {
+    background: rgba(72,88,188,.7);
+    color: white;
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.transparent_td {
+    color: transparent;
+    background: rgba(72,88,188,.7);
+}
+
+.brecks_kinds_table thead {
+    background: rgba(72,88,188,.7);
+    color: white;
+}
+
+.table_red {
+    color: orangered;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.table_green {
+    color: forestgreen;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+tbody tr:nth-child(2n) {
+    background: rgba(72,88,188,.3);
+}
+
+
+td {
+    text-align: center;
+    border-right: rgba(72,88,188,.4) 1px solid;
+}
+
+@media screen and (max-width: 775px) {
+    .brecks_kinds_table {
+        display: none;
+    }
+}
+
+.brecks_kinds_header {
+    text-align: center;
+    color: rgba(72,88,188,.8);
+    margin-top: 30px;
+}
+
+.brecks_kinds_digit {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    background: rgba(72,88,188,.8);
+    width: 45px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.brecks_kinds_text_span {
+    color: rgba(72,88,188,.8);
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.brecks_kinds_text {
+    color: #6c757d;
+    font-size: 18px;
 }
