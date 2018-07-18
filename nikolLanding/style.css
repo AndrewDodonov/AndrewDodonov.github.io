@@ -216,3 +216,70 @@ td {
     color: #6c757d;
     font-size: 18px;
 }
+
+.about_doctor {
+    padding-top: 10px;
+    padding-bottom: 80px;
+    width: 100%;
+    background: linear-gradient( 135deg, white 50%,#8AA9D6 50%);
+    background: -webkit-linear-gradient(-45deg, white 50%,#8AA9D6 50%);
+
+}
+
+.about_doctor_header {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #e23753;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.about_doctor_description {
+    text-align: right;
+    font-size: 18px;
+
+}
+
+.about_doctor_profession {
+    color: #e23753;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about_doctor_li {
+    color:white;
+    font-size: 17px;
+}
+
+.brecks_parts {
+    background: url("img_land/background_stomatology_chair.jpg") fixed no-repeat;
+    background-size: cover;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.brecks_parts_header {
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.brecks_parts_img {
+    width: 51px;
+}
+
+.brecks_parts_figure {
+    font-size: 30px;
+    color: white;
+    margin-left: 15px;
+}
+
+.brecks_parts_text {
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+}
