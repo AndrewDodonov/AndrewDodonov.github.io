@@ -3,16 +3,48 @@
 .head {
     background: url("img_land/main_background.jpg") fixed;
     background-size: cover;
-    height: 800px;
+
     width: 100%;
 }
 
 .head_right {
     background: rgba(72,88,188,.7);
-    height: 800px;
+
     margin-right: 0 !important;
 
 }
+
+
+@media screen and (min-width: 400px) {
+    .head {
+
+        height: 850px;
+
+    }
+
+    .head_right {
+
+        height: 850px;
+
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .head {
+
+        height: 950px;
+
+    }
+
+    .head_right {
+
+        height: 950px;
+
+
+    }
+}
+
 
 .head_header {
     color: white;
@@ -30,12 +62,29 @@
 
 }
 
+.head_advantage_phone {
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 25px;
+    transition: all ease .4s;
+}
+
+.head_advantage_phone:hover {
+    color: #e23753;
+    text-decoration: none;
+}
+
+.fa-phone {
+    color: white;
+}
+
 @media screen and (max-width: 990px) {
     .head_advantage {
         margin-left: 10%;
     }
 
-    .head_advantage_main_taxt {
+    .head_advantage_main_text {
         display: block;
         width: 85%;
         margin: 20px auto;
@@ -252,6 +301,10 @@ td {
 .about_doctor_li {
     color:white;
     font-size: 17px;
+}
+
+.about_doctor_photo {
+    width: 90%;
 }
 
 .brecks_parts {
