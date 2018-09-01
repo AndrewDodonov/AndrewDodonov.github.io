@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Toggles</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<div class="lamp"><img src="images.png"></div>
+
+<div>
+    <label class="switch">
+        <input type="checkbox">
+        <span class="slider round switch_body"></span>
+    </label>
+
+    <label class="switch">
+        <input type="checkbox">
+        <span class="slider round switch_light"></span>
+    </label>
+</div>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
+<script>
+  $('.switch_body').click(function () {
+      $('body').toggleClass('grey')
+  });
+
+  $('.switch_light').click(function () {
+      $('.lamp').toggleClass('light')
+  })
+
+</script>
+
+</body>
+</html>
