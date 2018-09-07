@@ -1,0 +1,81 @@
+.btn {
+    display:block;
+    height:5rem;
+    border:.1875rem solid #0937a4;
+    width:100%;
+    max-width:20.5rem;
+    font-size:15px;
+    text-transform:uppercase;
+    text-align:center;
+    line-height:4.8125rem;
+    font-weight:700;
+    overflow:hidden;
+    cursor:pointer;
+    background-color:transparent}
+
+.btn,.btn span{
+    position:relative}
+
+.btn span{
+    -webkit-transition:color .4s;
+    transition:color .4s;
+    z-index:2;
+    color:#0937a4}
+
+.btn i{
+    display:block;
+    width:50%;
+    height:50%;
+    position:absolute;
+    background-color:#0937a4;
+    -webkit-transition:.4s;
+    transition:.4s}
+
+.btn i:first-child{
+    top:-50%;
+    left:-50%}
+
+.btn i:nth-child(2){
+    top:-50%;
+    right:-50%}
+
+.btn i:nth-child(3){
+    bottom:-50%;
+    right:-50%}
+
+.btn i:nth-child(4){
+    bottom:-50%;
+    left:-50%}
+
+.btn:hover span{
+    color:#fff}
+
+.btn:hover i:first-child{
+    top:0;
+    left:0}
+
+.btn:hover i:nth-child(2){
+    top:0;
+    right:0}
+
+.btn:hover i:nth-child(3){
+    bottom:0;
+    right:0}
+
+.btn:hover i:nth-child(4){
+    bottom:0;
+    left:0}
+
+.btn.revers_color{
+    background-color:#0937a4}
+
+.btn.revers_color:hover span{
+    color:#0937a4}
+
+.btn.revers_color span{
+    color:#fff}
+
+.btn.revers_color i{
+    background-color:#fff}
+
+
