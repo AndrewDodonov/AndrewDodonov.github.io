@@ -1,0 +1,9 @@
+ $(window).scrollTop()>=10?$(".discount-desctop-form-none").addClass("dispNone"):$(".discount-desctop-form-none").removeClass("dispNone")
+
+
+
+$(window).scroll(function(){$(window).scrollTop()>=180?$(".contacts__item").addClass("fixed_place"):$(".contacts__item").removeClass("fixed_place")})
+
+$(window).scroll(function(){$(window).scrollTop()>=300?$(".contacts__item").addClass("fixed_place_block"):$(".contacts__item").removeClass("fixed_place_block")});
+$(window).scroll(function(){$(window).scrollTop()>=300?$(".phone-me__button").addClass("fixed_place_block"):$(".phone-me__button").removeClass("fixed_place_block")})
+
