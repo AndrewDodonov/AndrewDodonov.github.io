@@ -1,0 +1,75 @@
+
+header {
+
+    height: 800px;
+    background: url(../img/header-1.jpg) fixed no-repeat;
+    background-size: contain;
+
+
+}
+
+.about_ireland_head_header {
+    color: forestgreen;
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: dimgray 3px 3px 10px;
+    font-family: 'Indie Flower', cursive;
+    margin-top: 40px;
+}
+.name {
+    color: #ff6600;
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: dimgray 3px 3px 10px;
+    font-family: 'Indie Flower', cursive;
+    margin-top: 10px;
+}
+
+.orange {
+
+    background: #ff6600;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: white;
+    text-align: justify;
+}
+
+.to-top {
+    position: relative;
+    top: 1000px;
+    transition: .8s;
+}
+
+.on-top {
+    top: 0 !important;
+}
+
+.white {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: forestgreen;
+    text-align: justify;
+}
+
+.green {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: forestgreen;
+    color: white;
+    text-align: justify;
+}
+
+.center-img {
+    display: block;
+    margin: 20px auto;
+    width: 400px;
+ }
+
+.center-img-300 {
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+}
