@@ -1,0 +1,16 @@
+[19-Oct-2018 07:20:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/akarui/public_html/send.php:1) in /home/akarui/public_html/send.php on line 21
+[19-Oct-2018 07:22:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/akarui/public_html/send.php:1) in /home/akarui/public_html/send.php on line 21
+[20-Oct-2018 11:11:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/akarui/public_html/send.php:1) in /home/akarui/public_html/send.php on line 21
+[20-Oct-2018 12:26:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/akarui/public_html/send.php:1) in /home/akarui/public_html/send.php on line 21
+[22-Oct-2018 12:42:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/akarui/public_html/send.php:1) in /home/akarui/public_html/send.php on line 21
+[22-Oct-2018 12:51:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/akarui/public_html/send.php:1) in /home/akarui/public_html/send.php on line 21
+[24-Oct-2018 21:25:20 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/akarui/public_html/send.php:1) in /home/akarui/public_html/send.php on line 21
+[25-Oct-2018 01:20:58 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/akarui/public_html/send.php:1) in /home/akarui/public_html/send.php on line 21
+[25-Oct-2018 14:18:21 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/akarui/public_html/send.php:1) in /home/akarui/public_html/send.php on line 21
+[26-Oct-2018 11:29:57 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/akarui/public_html/send.php:1) in /home/akarui/public_html/send.php on line 21
+[26-Oct-2018 12:57:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/akarui/public_html/send.php:1) in /home/akarui/public_html/send.php on line 21
+[28-Oct-2018 14:16:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/akarui/public_html/send.php:1) in /home/akarui/public_html/send.php on line 21
+[28-Oct-2018 20:02:31 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/akarui/public_html/send.php:1) in /home/akarui/public_html/send.php on line 21
+[31-Oct-2018 15:23:55 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/akarui/public_html/send.php:1) in /home/akarui/public_html/send.php on line 21
+[01-Nov-2018 00:29:51 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/akarui/public_html/send.php:1) in /home/akarui/public_html/send.php on line 21
+[01-Nov-2018 04:20:15 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/akarui/public_html/send.php:1) in /home/akarui/public_html/send.php on line 21
