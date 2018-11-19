@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/animations.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header>
+    <div class="navigation">
+        <ul>
+            <li><a href="">НАЧАЛО</a></li>
+            <li><a href="">ПОЧЕМУ OONIES</a></li>
+            <li><a href="">КУПИТЬ</a></li>
+            <li><a href="">КОНТАКТЫ</a></li>
+        </ul>
+    </div>
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="novinka">ХИТ СЕЗОНА!</div>
+            <div class="constructor">КОНСТРУКТОР</div>
+         <img class="oonies-title" src="img/logo-oonies-935.png">
+           <div class="header-utp">
+               <div class="receive"><img class="investment" src="img/delivery-truck.png"> БЫСТРАЯ ДОСТАВКА <br>ПО ВСЕЙ УКРАИНЕ</div>
+               <div class="receive"><img class="investment" src="img/investment.png"> ОПЛАТА<br>ПРИ ПОЛУЧЕНИИ</div>
+           </div>
+            <div class="header-price"><div class="old-price">800<span class="zacher-1" ></span><span class="zacher-2" ></span><sup>грн</sup></div><div class="new-price">559<sup>грн</sup></div></div>
+            <div class="header-buttons">
+                <a href="" class="order-button-left animated-button-left">ЗАКАЗАТЬ</a> <a href="" class="order-button-right animated-button-right">ЗАДАТЬ ВОПРОС</a>
+            </div>
+
+        </div>
+
+
+        <div class="col-lg-6">
+
+            <div class="best-gift">ЛУЧШИЙ ПОДАРОК ЭТОЙ ЗИМЫ</div>
+            <img class="header-main-img" src="img/oonies-head-11.png"></div>
+    </div>
+</div>
+</header>
+
+<section class="be_careful">
+    <div class="be_careful_header">ОСТЕРЕГАЙТЕСЬ ПОДДЕЛОК!</div>
+    <img class="attention" src="img/warning-1.png">
+    <div class="container">
+        <div class="be_careful_text">В связи с популярностью игрушки, на рынке появилось большое количество поддельных моделей.
+            Как официальный поставщик, мы гарантируем:</div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="left-ico">
+                <img class="be_careful_ico" src="img/charity.png">
+                <div class="be_careful_ico_text">Нетоксичные пластик, силикон и клейкую поверхность шариков.</div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="center-ico">
+                <img class="be_careful_ico" src="img/good.png">
+                <div class="be_careful_ico_text">Долговечность продукции и всех деталей станка. </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="right-ico">
+                <img class="be_careful_ico" src="img/jigsaw.png">
+                <div class="be_careful_ico_text">Совместимость станка с любыми заготовками Onoies.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="process-description">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <img class="process-img" src="img/oonies-process-1.png">
+            </div>
+            <div class="col-lg-6">
+                <div class="process-description-text">
+                    <div class="check-circle"></div>Откройте камеру.<br><br>
+                    Надавите манометр вверх, чтобы освободить место.
+                    <br><br>
+                    Загрузите гранулу, как показано в камере.
+                    <br><br>
+                    Важно помнить, что основание гранулы должно располагаться снаружи камеры.
+                </div>
+                <div class="check-circle"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="process-description-text">
+                    Закройте камеру.<br><br>
+                    Надавите указатель вниз до щелчка.<br><br>
+                    Чашка датчика должна покрывать верхнюю часть гранулы.<br><br>
+                    Установите камеру на верхнюю часть станка.<br><br>
+                    Надавливайте на рычаг станка и наблюдайте как шарик Унис растет!
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img class="process-img" src="img/oonies-process-2.png">
+            </div>
+        </div>
+        <div class="row" style="margin-top: 30px">
+            <div class="col-lg-6">
+                <img class="process-img" src="img/oonies-process-3.png">
+            </div>
+            <div class="col-lg-6">
+                <div class="process-description-text">
+                    Снимите камеру со станка.<br><br>
+                    Откройте камеру и достаньте получившийся шарик.<br><br>
+                    МОЖНО НАЧИНАТЬ ИГРАТЬ! :)
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script>
+$('.oonies-title').mouseover(function () {
+$('.oonies-title').addClass('animated rubberBand');
+});
+
+$('.oonies-title').mouseout(function () {
+    $('.oonies-title').removeClass('animated rubberBand');
+});
+
+$('.animated-button-left').mouseover(function () {
+    $('.animated-button-left').addClass('animated rubberBand');
+});
+
+$('.animated-button-left').mouseout(function () {
+    $('.animated-button-left').removeClass('animated rubberBand');
+});
+
+$('.animated-button-right').mouseover(function () {
+    $('.animated-button-right').addClass('animated rubberBand');
+});
+
+$('.animated-button-right').mouseout(function () {
+    $('.animated-button-right').removeClass('animated rubberBand');
+});
+
+</script>
+
+
+<script>
+    $(window).scroll(function(){
+        $(window).scrollTop()>=10?$(".navigation").addClass("yellow_background"):$(".navigation").removeClass("yellow_background");})
+
+</script>
+
+<script>var target = $('.be_careful');
+var targetPos = target.offset().top;
+var winHeight = $(window).height();
+var scrollToElem = targetPos - winHeight;
+$(window).scroll(function(){
+    var winScrollTop = $(this).scrollTop();
+    if(winScrollTop > scrollToElem){
+        $('.left-ico').addClass('animated fadeInLeft');
+        $('.right-ico').addClass('animated fadeInRight');
+        $('.center-ico').addClass('animated fadeInUp');
+    }
+});
+</script>
+
+</body>
+</html>
