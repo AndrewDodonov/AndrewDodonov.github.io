@@ -1,0 +1,714 @@
+* {
+    font-family: 'Roboto',"Arial";
+}
+
+header {
+    background: url("../rotating-bright-yellow-background-with-circles-summer-sun-endless-loop_b3xin9uy__F0000.png") fixed no-repeat;
+    background-size: cover;
+    width: 100%;
+
+}
+
+.best-gift {
+    color: #733bb3;
+    font-size: 40px;
+    font-weight: 900;
+    text-shadow: #733bb3 0 0 10px;
+    transform: rotate(10deg);
+    margin-top: 80px;
+    text-align: center;
+}
+
+.header-main-img {
+    width: 700px;
+    margin: 30px auto;
+}
+
+@media screen and (max-width: 400px) {
+    .header-main-img {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 1420px){
+    .header-main-img {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 1230px){
+    .header-main-img {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 999px){
+    .header-main-img {
+        width: 100%;
+    }
+
+    .best-gift {
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+
+
+.oonies-title {
+    width:70%;
+    display: block;
+    margin: 20px auto;
+}
+
+.novinka {
+    color: #733bb3;
+    font-size: 40px;
+    font-weight: 900;
+    text-shadow: #733bb3 0 0 10px;
+    transform: rotate(-10deg);
+    margin-top: 40px;
+}
+
+.novinka-1 {
+    text-align: center;
+    color: #733bb3;
+    font-size: 30px;
+    font-weight: 900;
+    text-shadow: #733bb3 0 0 10px;
+    transform: rotate(-10deg);
+    margin-top: -25px;
+}
+
+.constructor {
+    color: #e4475c;
+    font-size: 40px;
+    font-weight: 900;
+    text-shadow: #e4475c 0 0 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.order-button-left {
+    display: block;
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+    padding: 9px;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    background: linear-gradient(to top,#bfd255 0%,#8eb92a 29%,#72aa00 59%,#9ecb2d 100%);
+    opacity: .8;
+    box-sizing: border-box;
+    box-shadow: #9ecb2d 0 0 10px;
+    margin-top: 20px;
+}
+
+.order-button-right {
+    display: block;
+    width: 200px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    padding: 9px;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    background: linear-gradient(to top, #cb60b3 0%,#de47ac 43%,#ad1283 81%,#ad1283 81%);
+    opacity: .8;
+    box-sizing: border-box;
+    box-shadow: #ad1283 0 0 10px;
+
+}
+
+.header-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-weight: 700;
+}
+
+.order-button-right:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.order-button-left:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.header-price {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-weight: 800;
+    font-size: 65px
+}
+
+.old-price {
+    color: dimgrey;
+    opacity: .8;
+    text-shadow: dimgrey 0 0 10px;
+    position: relative;
+
+}
+
+.new-price {
+    color: #e03a52;
+    text-shadow: #e03a52 0 0 10px;
+}
+
+.zacher-1 {
+    transform: rotate(30deg);
+    display:block;
+    position:absolute;
+    top:40px;
+    left:-10px;
+    width:150px;
+    height:7px;
+    background: #5e687f;
+    box-shadow: #1d2027 3px 3px 10px;
+    opacity: .8;
+}
+
+.zacher-2 {
+    transform: rotate(-30deg);
+    display:block;
+    position:absolute;
+    top:40px;
+    left:-10px;
+    width:150px;
+    height:7px;
+    background: #5e687f;
+    box-shadow: #1d2027 3px 3px 10px;
+    opacity: .8;
+}
+
+.investment {
+    width: 50px;
+    display: block;
+    margin: 20px auto;
+}
+
+.header-utp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.receive {
+    text-align: center;
+    font-weight: 800;
+    color: #574da4;
+    text-shadow: #574da4 0 0 10px;
+}
+
+.navigation {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.navigation ul {
+    text-align: center;
+    padding: 10px;
+}
+
+.yellow_background {
+    background: yellow;
+}
+
+.navigation ul li{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.navigation ul li a{
+    display: block;
+    z-index: 100;
+    color: #733bb3;
+    text-decoration: none;
+    font-weight: 800;
+    text-shadow: #733bb3 0 0 10px;
+    transition: .3s;
+
+}
+
+@media screen and (max-width: 999px) {
+    .navigation ul {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 559px) {
+    .navigation {
+        display: none;
+    }
+}
+
+.be_careful {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.be_careful_header {
+    text-align: center;
+    font-weight: 800;
+    color: #e03a52;
+    font-size: 30px;
+}
+
+.form_header {
+    text-align: center;
+    font-weight: 800;
+    color: #e03a52;
+    font-size: 20px;
+}
+
+.attention {
+    width: 90px;
+    display: block;
+    margin: 30px auto;
+}
+
+.be_careful_text {
+    text-align: center;
+    font-weight: 800;
+    color: #574da4;
+    font-size: 20px;
+}
+
+.be_careful_ico {
+    width: 90px;
+    display: block;
+    margin: 30px auto;
+}
+
+.be_careful_ico_text {
+    color: #574da4;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.process-description {
+    background: yellow;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.process-img {
+    display: block;
+    width: 70%;
+    margin: 0px auto;
+}
+
+.process-description-text {
+    margin-top: 50px;
+    color: #574da4;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.check-circle {
+    background: url('../img/checked.png');
+    display: inline-block;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-bottom: -8px;
+    margin-right: 10px;
+}
+
+.video-about-onoies {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.video-description-text {
+    margin-top: 20px;
+    color: #574da4;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: justify;
+}
+
+.question-form-description-text {
+    margin-top: 20px;
+    color: #574da4;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: justify;
+}
+
+
+.circle {
+    border-radius: 50%;
+    background: #574da4;
+    width: 160px;
+    height: 160px;
+    display: inline-block;
+    line-height: 160px;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    box-shadow: #574da4 0 0 10px;
+}
+.label {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #e03a52
+}
+
+.counter {
+
+    background: yellow;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.what-you-can {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: yellow;
+}
+
+.what-you-can-img {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+}
+
+.first-words-about {
+    font-size: 20px;
+    color: #574da4;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: #574da4 0 0 3px;
+}
+
+.what-you-can-text {
+    color: #574da4;
+    text-align: justify;
+    font-weight: 600;
+}
+
+.first-words-about +img {
+    width: 50px;
+    display: block;
+    margin: 10px auto;
+}
+
+.be_careful_header + img {
+    width: 50px;
+    display: block;
+    margin: 10px auto;
+}
+
+.modal-phone {
+    font-family: Arial;
+    background: yellow;
+    color: #ebc772;
+    padding: 30px 10px 10px 10px;
+    text-align: center;
+    width: 10px;
+    position: fixed;
+    left: 40%;
+    top:-100%;
+    right: 10%;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 32px;
+    overflow: hidden;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 10000001;
+    transition: .6s;
+
+}
+
+.radius {
+    border-radius: 0 !important;
+}
+
+.black-background {
+    z-index: 10000000;
+}
+
+.modal-phone-href {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.modal-phone-text {
+    color: white;
+    font-size: 25px;
+}
+
+.modal-phone-href {
+    color:white;
+    background: #4f589c;
+    padding: 8px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.lets_order {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 20px;
+    padding: 9px;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    background: linear-gradient(to top, #cb60b3 0%,#de47ac 43%,#ad1283 81%,#ad1283 81%);
+    opacity: .8;
+    box-sizing: border-box;
+    box-shadow: #ad1283 0 0 10px;
+    border: none;
+
+}
+
+.lets_order {
+    cursor: pointer;
+}
+
+.qustion-form-input {
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 20px;
+    height: 40px;
+    padding-left: 20px;
+
+}
+
+.question-form-button {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 20px;
+    padding: 9px;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    background: linear-gradient(to top, #cb60b3 0%,#de47ac 43%,#ad1283 81%,#ad1283 81%);
+    opacity: .8;
+    box-sizing: border-box;
+    box-shadow: #ad1283 0 0 10px;
+    cursor: pointer;
+    border: none;
+}
+
+#question-form {
+    display: block;
+    margin: 20px auto;
+}
+
+.question-form {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+/*---------------------*/
+
+/*Time for the CSS*/
+
+.slider{
+    /*Same as width of the large image*/
+    position: relative;
+    /*Instead of height we will use padding*/
+
+
+    margin: 10px auto;
+
+    /*Lets add a shadow*/
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+
+/*Last thing remaining is to add transitions*/
+.slider>img{
+    position: absolute;
+    left: 0; top: 0;
+    transition: all 0.5s;
+}
+
+.slider input[name='slide_switch'] {
+    display: none;
+}
+
+.slider label {
+    /*Lets add some spacing for the thumbnails*/
+    margin: 18px 0 0 18px;
+    border: 3px solid #999;
+
+    float: left;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    /*Default style = low opacity*/
+    opacity: 0.6;
+}
+
+.slider label img{
+    display: block;
+}
+
+/*Time to add the click effects*/
+.slider input[name='slide_switch']:checked+label {
+    border-color: #666;
+    opacity: 1;
+}
+/*Clicking any thumbnail now should change its opacity(style)*/
+/*Time to work on the main images*/
+.slider input[name='slide_switch'] ~ img {
+    opacity: 0;
+    transform: scale(1.1);
+}
+/*That hides all main images at a 110% size
+On click the images will be displayed at normal size to complete the effect
+*/
+.slider input[name='slide_switch']:checked+label+img {
+    opacity: 1;
+    transform: scale(1);
+}
+/*Clicking on any thumbnail now should activate the image related to it*/
+
+/*We are done :)*/
+
+.slider {
+    width: 640px;
+    padding-top: 320px; /*That helps bring the labels down*/
+}
+
+.mar1 {
+    width: 100px
+}
+
+@media screen and (max-width: 645px) {
+    .slider>img{
+        width: 320px;
+    }
+    .mar1 {
+        width: 50px
+    }
+    .temp {
+        width: 320px;
+    }
+
+    .slider {
+        width: 320px;
+        padding-top: 160px; /*That helps bring the labels down*/
+    }
+}
+
+@keyframes question_form_img_yourAnimation{
+    0%{
+        transform: rotate(0deg);
+    }
+    2%{
+        transform: rotate(-25deg);
+    }
+    5%{
+        transform: rotate(25deg);
+    }
+    7%{
+        transform: rotate(-25deg);
+    }
+    10%{
+        transform: rotate(25deg);
+    }
+    15%{
+        transform: rotate(0deg);
+    }
+}
+
+.question_form_img{
+    animation: question_form_img_yourAnimation 3s infinite 0s linear;
+    -webkit-animation: question_form_img_yourAnimation 3s infinite 0s linear;
+}
+
+@-webkit-keyframes question_form_img_yourAnimation{
+    0%{
+        -webkit-transform: rotate(0deg);
+    }
+    2%{
+        -webkit-transform: rotate(-25deg);
+    }
+    5%{
+        -webkit-transform: rotate(25deg);
+    }
+    7%{
+        -webkit-transform: rotate(-25deg);
+    }
+    10%{
+        -webkit-transform: rotate(25deg);
+    }
+    15%{
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+.carousel-text {
+    margin-top: 20px;
+    color: #574da4;
+    text-align: justify;
+    font-weight: 600;
+}
+
+.carousel-oonies {
+    padding-bottom: 30px;
+}
+
+
+.footer-form {
+    background: yellow;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#footer-form {
+    padding: 25px;
+
+
+}
+
+.footer-form-text-header-img {
+    width:30px;
+    margin-right: 15px;
+    margin-top: -8px;
+}
+
+.footer-form-text-header {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #ad1283;
+}
+
+.footer-form-text {
+    font-weight: 700;
+    margin-top: 10px;
+    color: #574da4
+}
+
+.footer-form-right-header {
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 800;
+    color: #ad1283;
+    text-shadow: #ad1283 0 0 3px;
+}
