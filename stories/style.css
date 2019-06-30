@@ -5,12 +5,33 @@ body {
 
 section.zoom {
     width: 100%;
-    height: 1000px;
+
     position: relative;
     overflow: hidden;
     background: url("bg.jpg");
     background-size: cover;
 }
+
+@media screen and (min-width: 500px) {
+    section.zoom {
+        height: 1000px;
+    }
+    section.zoom .text {
+        width: 90%;
+        right:0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    section.zoom {
+        height: 300px;
+    }
+    section.zoom .text {
+        width: 70%;
+        right:20%;
+    }
+}
+
 section.zoom:before {
     content: '';
     position: absolute;
@@ -38,10 +59,10 @@ section.zoom .layer2 {
 }
 
 section.zoom .text {
-    width: 90%;
+
     position: absolute;
    /* top: 0;*/
-    right:0;
+
     transform: translateY(50%);
 }
 
