@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<section class="zoom">
+    <img class="text" src="text.png">
+    <img class="layer1" src="mountain1.png">
+    <img class="layer2" src="mountain2.png">
+</section>
+<section class="content">
+<h2>Simple background parallax using jQuery</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec rutrum neque. Nullam bibendum, nisi vitae hendrerit porta, odio libero fermentum sapien, at suscipit felis urna ut tortor. Proin aliquam ut dolor vitae imperdiet. Etiam finibus ante sed ultricies venenatis. Quisque tempor sem eget venenatis fringilla. Sed sagittis tempus est non viverra. Mauris vel efficitur eros, et vehicula orci. Etiam viverra ligula a odio euismod dictum. Quisque pretium vestibulum felis in finibus. Aenean nec dictum quam. Nullam condimentum tortor metus, ut auctor felis euismod at. Proin ac porttitor felis.
+
+    </p><p>Nulla sit amet felis et turpis laoreet consectetur at sit amet nisl. Ut maximus, nisl id convallis fringilla, erat lacus tempor sem, quis tincidunt est nisi sed risus. Cras sit amet dui lacus. Etiam sagittis odio non pharetra consequat. Integer sed orci nec nisi sollicitudin tempus. Mauris vehicula eros vel condimentum consectetur. Nulla non sapien sit amet est suscipit finibus a vitae ante. Praesent sit amet ipsum eget mi commodo vehicula varius quis nibh.</p>
+</section>
+<script src="jquery-3.4.1.js"></script>
+<script>
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        $('.layer1').css({
+            width:(100 + scroll/5) + "%"
+        });
+        $('.layer2').css({
+            width:(100 + scroll/5) + "%",
+            left: scroll/50 + "%"
+        });
+        $('.text').css({
+
+            top: - scroll/20 + "%"
+        })
+    })
+</script>
+</body>
+</html>
