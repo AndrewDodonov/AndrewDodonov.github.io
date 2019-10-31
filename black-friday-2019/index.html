@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>&laquo;TimeTo&raquo; jQuery plug-in example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <!--[if lt IE 9]>
+    <script>
+        document.createElement('figure');
+        document.createElement('figcaption');
+    </script>
+    <![endif]-->
+    <link href="timeTo.css" type="text/css" rel="stylesheet"/>
+
+
+</head>
+<body>
+<!--<h1>&laquo;TimeTo&raquo; jQuery plugin demo</h1>
+
+<h2>Countdown timer</h2>
+
+<h3>Set countdown in seconds with callback</h3>
+<pre>
+$('#countdown').timeTo(120, function() { alert('Countdown finished'); }); </pre>
+
+<div id="countdown-1"></div>
+<p><button id="reset-1" type="button">Reset this timer</button></p>
+
+<div class="clock"></div>
+<div class="clock"></div>
+
+<h3>Hide hours</h3>
+<pre>
+$('#countdown').timeTo({
+seconds: 100,
+displayHours: false
+}); </pre>
+
+<div id="countdown-11"></div>
+
+<h3>Set countdown to specified date-time</h3>
+<pre>-->
+
+
+<section class="black_friday_main_section">
+
+    <img class="black_friday_main_section_img_text" src="img/black-friday-text-1.png">
+
+    <h1 class="black_friday_main_section_header_name">До начала глобальной распродажи осталось</h1>
+    <div class="black_friday_timer_container">
+        <div style="opacity: 0">
+            $('#countdown').timeTo(new Date('<span id="date-str" style="display:none"></span>'));
+        </div>
+
+        <div id="countdown-2" style="width:250px; margin: 10px auto"></div>
+        <ul class="time_pre">
+            <li>дней</li>
+            <li>часов</li>
+            <li>минут</li>
+            <li>секунд</li>
+        </ul>
+    </div>
+
+    <h2 class="black_friday_main_section_header_name_next" style="margin-top: 100px">Успей зарегистрироваться, <br> чтобы получить самый ранний <br> доступ к скидкам!</h2>
+
+    <form id="black-friday-form">
+        <input id="phone" class="black-friday-form-input" type="text" placeholder="Ваш телефон" required>
+        <button class="black-friday-form-button" type="submit">Участвую!</button>
+    </form>
+
+
+    <div class="black_friday_goods">
+
+        <div class="black_friday_goods_item">
+            <a href="" class="black_friday_goods_item_link">
+                <img src="img/icon-link-home.png">
+                <div>Для дома</div>
+            </a>
+        </div>
+
+        <div class="black_friday_goods_item">
+            <a href="" class="black_friday_goods_item_link">
+                <img src="img/icon-link-garden.png">
+                <div>Для дачи</div>
+            </a>
+        </div>
+
+        <div class="black_friday_goods_item">
+            <a href="" class="black_friday_goods_item_link">
+                <img src="img/icon-link-beauty.png">
+                <div>Красота</div>
+            </a>
+        </div>
+
+        <div class="black_friday_goods_item">
+            <a href="" class="black_friday_goods_item_link">
+                <img src="img/icon-link-car.png">
+                <div>Для авто</div>
+            </a>
+        </div>
+
+        <div class="black_friday_goods_item">
+            <a href="" class="black_friday_goods_item_link">
+                <img src="img/icon-link-phone.png">
+                <div>Для телефонов</div>
+            </a>
+        </div>
+
+        <div class="black_friday_goods_item">
+            <a href="" class="black_friday_goods_item_link">
+                <img src="img/icon-link-child.png">
+                <div>Для детей</div>
+            </a>
+        </div>
+
+    </div>
+
+</section>
+<!-- <h3>Set captions and dark theme</h3>
+ <pre>
+$('#countdown').timeTo({
+ time: '<span id="date2-str"></span>',
+ displayDays: 2,
+ theme: "black",
+ displayCaptions: true,
+ fontSize: 48,
+ captionSize: 14,
+ lang: 'ru'
+}); </pre>
+
+ <div id="countdown-3"></div>
+
+ <br/><br/>
+ <h2>Digital clock</h2>
+ <pre>
+$('#clock-1').timeTo();</pre>
+
+ <div id="clock-1"></div>
+
+     <p>&nbsp;</p>
+ <h2>Digital clock with Step Setting and Step Callback</h2>
+ <pre>
+ $('#clock-w-step-cb').timeTo(
+     {
+         step: function() {
+             console.log('Executing every 3 ticks');
+         },
+         stepCount: 3
+     }
+ );
+ </pre>
+
+ <div id="clock-w-step-cb"></div> -->
+
+
+
+
+
+<!--HTML элемент, который будет иметь маску ввода телефонного номера  -->
+<!--<input  id="phone" type="text"> -->
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--<script>window.jQuery || document.write('<script src="node_modules/jquery/dist/jquery.min.js"><\/script>')</script>-->
+<script src="jquery.time-to.js"></script>
+<script>
+    /**
+     * Set timer countdown in seconds with callback
+     */
+    $('#countdown-1').timeTo(120, function(){
+        alert('Countdown finished');
+    });
+    $('#reset-1').click(function() {
+        $('#countdown-1').timeTo('reset');
+    });
+
+    /**
+     * Hide hours
+     */
+    $('#countdown-11').timeTo({
+        seconds: 100,
+        displayHours: false
+    });
+
+    $('#clock-w-step-cb').timeTo({
+        step: function() {
+            console.log('Executing every 3 ticks');
+        },
+        stepCount: 3
+    });
+
+    var date = new Date('2019-11-29T22:00:00.591Z');
+
+    document.getElementById('date-str').innerHTML = date.toISOString();
+
+    /**
+     * Set timer countdown to specyfied date
+     */
+    $('#countdown-2').timeTo(date);
+
+    var time = new Date('2019-11-29T22:00:00.591Z');
+    document.getElementById('date2-str').innerHTML = time;
+
+    /**
+     * Set theme and captions
+     */
+    $('#countdown-3').timeTo({
+        time: time,
+        displayDays: 2,
+        theme: "black",
+        displayCaptions: true,
+        fontSize: 48,
+        captionSize: 14,
+        lang: 'ru'
+    });
+
+    /**
+     * Simple digital clock
+     */
+    $('#clock-1').timeTo();
+
+    function getRelativeDate(days, hours, minutes) {
+        var d = new Date(Date.now() + 60000 /* milisec */ * 60 /* minutes */ * 24 /* hours */ * days /* days */);
+
+        d.setHours(hours || 0);
+        d.setMinutes(minutes || 0);
+        d.setSeconds(0);
+
+        return d;
+    }
+</script>
+
+<script src="jquery.maskedinput.min.js"></script>
+<script>
+    //Код jQuery, установливающий маску для ввода телефона элементу input
+    //1. После загрузки страницы,  когда все элементы будут доступны выполнить...
+    $(function(){
+        //2. Получить элемент, к которому необходимо добавить маску
+        $("#phone").mask("38(999) 999-9999");
+    });
+</script>
+</body>
+</html>
