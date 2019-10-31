@@ -137,4 +137,14 @@ body {
 }
 
 
+@media screen and (max-width: 500px) {
+    .black_friday_main_section_header_name {
+        font-size: 20px;
+    }
+    .black_friday_main_section_header_name_next {
+        font-size: 20px;
+    }
+
+}
+
 
