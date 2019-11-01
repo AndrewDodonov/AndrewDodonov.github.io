@@ -2,8 +2,9 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <title>&laquo;TimeTo&raquo; jQuery plug-in example</title>
+    <title>Черная пятница в WEMART</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="style.css">
 
     <!--[if lt IE 9]>
@@ -65,7 +66,7 @@ displayHours: false
 
     <h2 class="black_friday_main_section_header_name_next" style="margin-top: 100px">Успей зарегистрироваться, <br> чтобы получить самый ранний <br> доступ к скидкам!</h2>
 
-    <form id="black-friday-form">
+    <form id="black-friday-form" action="javascript:void(0)">
         <input id="phone" class="black-friday-form-input" type="text" placeholder="Ваш телефон" required>
         <button class="black-friday-form-button" type="submit">Участвую!</button>
     </form>
@@ -164,7 +165,7 @@ $('#clock-1').timeTo();</pre>
 <!--<input  id="phone" type="text"> -->
 
 
-
+<div class="bf-modal-container animated flipInY"></div>
 
 
 
@@ -246,6 +247,31 @@ $('#clock-1').timeTo();</pre>
         //2. Получить элемент, к которому необходимо добавить маску
         $("#phone").mask("38(999) 999-9999");
     });
+</script>
+
+<script>
+
+
+    $(document).ready(function(){
+        $("#black-friday-form").submit(function() {
+            var form_data = $(this).serialize();
+            $.ajax({
+                type: "POST",
+                url: "send.php",
+                data: form_data,
+
+            });
+            $('.bf-modal-container').addClass('bf-modal-display')
+        });
+
+    });
+
+</script>
+
+<script>
+    $('.bf-modal-container').click(function () {
+        $('.bf-modal-container').removeClass('bf-modal-display')
+    })
 </script>
 </body>
 </html>
